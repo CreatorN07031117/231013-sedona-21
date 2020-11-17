@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона — форма отзыва</title>
+  </head>
+  <body class="page-body">
+    <header class="page-header">
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">
+          <span class="visialy-hidden">Открыть меню</span>
+        </button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="/">Главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="/gallery">Фото и видео</a>
+            </li>
+            <li class="main-nav__item  main-nav__item--active">Форма отзыва</li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="https://htmlacademy.ru/intensive/adaptive" target="blank">HTML Academy</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <a class="page-header__logo" href="/">
+        <img class="logo" src="https://via.placeholder.com/150x150" alt="City of Sedona">
+      </a>
+    </header>
+    <main class="page-main">
+      <div class="signboard-small signboard-small__wrapper">
+        <img class="signboard-small__img" src="https://via.placeholder.com/150x150" alt="Welcome to Sedona">
+      </div>
+      <h1 class="visialy-hidden"></h1>
+      <section class="feedback-preview feedback-preview__wrapper">
+        <h2 class="feedback-preview__header">Оставьте свой отзыв</h2>
+        <p class="feedback-preview__text">Помогите нашим отелям стать лучше! Оставьте свой отзыв о них,а также о посещенных вами достопримичательностях</p>
+      </section>
+      <div class="feedback-form feedback-form__wrapper">
+        <form class="feedback-form__form" action="https://echo.htmlacademy.ru" method="post">
+          <div class="feedback-username feedback-username__wrapper">
+            <p class="feedback-username__header">Представьтесь:</p>
+            <label class="feedback-username__label feedback-username__label--first-name">
+              <span class="feedback-username__caption">Имя<sup>*</sup>:</span>
+              <input class="feedback-username__field feedback-username__field--first-name" type="text" name="first-name" placeholder="Петр">
+            </label>
+            <label class="feedback-username__label feedback-username__label--last-name">
+              <span class="feedback-username__caption">Фамилия<sup>*</sup>:</span>
+              <input class="feedback-username__field feedback-username__field--last-name" type="text" name="last-name" placeholder="Иванов">
+            </label>
+            <label class="feedback-username__label feedback-username__label--middle-name">
+              <span class="feedback-username__caption">Отчество:</span>
+              <input class="feedback-username__field feedback-username__field--middle-name" type="text" name="middle-name" placeholder="Иванович">
+            </label>
+          </div>
+          <div class="feedback-user-contacts  feedback-user-contacts__wrapper">
+            <p class="feedback-user-contacts__header">Контактная информация:</p>
+            <label class="feedback-user-contacts__label feedback-user-contacts__label--user-phone">
+              <span class="feedback-user-contacts__caption">Контактный телефон<sup>*</sup>:</span>
+              <input class="feedback-user-contacts__field feedback-user-contacts__field--phone" type="tel" placeholder="Введите телефон">
+            </label>
+            <label class="feedback-user-contacts__label feedback-user-contacts__label--user-email">
+              <span class="feedback-user-contacts__caption">Электронная почта<sup>*</sup>:</span>
+              <input class="feedback-user-contacts__field feedback-user-contacts__field--email" type="tel" placeholder="Введите e-mail">
+            </label>
+          </div>
+          <div class="feedback-feeling feedback-feeling__wrapper">
+            <p class="feedback-feeling__header">Ваше общее впечатление:</p>
+            <label class="feedback-feeling__label">
+              <input class="feedback-feeling__radio" type="radio" name="radiobutton" value="good" checked>
+              <span class="feedback-feeling__caption">Скорее положительное</span>
+            </label>
+            <label class="feedback-feeling__label">
+              <input class="feedback-feeling__radio" type="radio" name="radiobutton" value="bad">
+              <span class="feedback-feeling__caption">Скорее отрицательное</span>
+            </label>
+            <label class="feedback-feeling__label">
+              <input class="feedback-feeling__radio" type="radio" name="radiobutton" value="difficult to answer">
+              <span class="feedback-feeling__caption">Затрудняюсь ответить</span>
+            </label>
+          </div>
+          <div class="feedback-attractions feedback-attractions__wrapper">
+            <p class="feedback-attractions__header">Посещенные достопримичательности:</p>
+            <label class="feedback-attractions__label">
+              <input class="feedback-attractions__checkbox" type="checkbox" checked>
+              <span class="feedback-attractions__caption">Мост Дьявола</span>
+            </label>
+            <label class="feedback-attractions__label">
+              <input class="feedback-attractions__checkbox" type="checkbox" checked>
+              <span class="feedback-attractions__caption">Гора-Колокол</span>
+            </label>
+            <label class="feedback-attractions__label">
+              <input class="feedback-attractions__checkbox" type="checkbox" checked>
+              <span class="feedback-attractions__caption">Слайд-парк</span>
+            </label>
+            <label class="feedback-attractions__label">
+              <input class="feedback-attractions__checkbox" type="checkbox">
+              <span class="feedback-attractions__caption">Красные скалы</span>
+            </label>
+          </div>
+          <div class="feedback-usertext feedback-usertext__wrapper">
+            <p class="feedback-usertext__header">Опишите свои эмоции:</p>
+            <label class="feedback-usertext__label">
+              <input class="feedback-usertext__field" type="text" placeholder="Опишите подробно все свои восторги">
+            </label>
+          </div>
+          <div class="feedback-finish feedback-finish__wrapper">
+            <button class="feedback-finish__button button" type="submit">Отправить отзыв</button>
+            <small class="feedback-finish__required"><sup>*</sup> — обязательные поля</small>
+          </div>
+        </form>
+      </div>
+    </main>
+    <footer class="page-footer">
+      <div class="footer footer__wrapper">
+        <div class="footer-hashtag">
+          <span class="footer-hashtag__text">#visitsedona</span>
+        </div>
+        <div class="footer-social social">
+          <ul class="footer-social__list">
+            <li class="footer-social__item">
+              <a class="social__link social__link--twitter" href="#" target="blank">Twitter</a>
+            </li>
+            <li class="footer-social__item">
+              <a class="social__link social__link--facebook" href="#" target="blank">Facebook</a>
+            </li>
+            <li class="footer-social__item">
+              <a class="social__link social__link--youtube" href="#" target="blank">Youtube</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-copyright copyright">
+          <span class="footer-copyright__text copyright__text">Разработано</span>
+          <a class="footer-copyright__logo copyright__logo" href="https://htmlacademy.ru/intensive/adaptive" target="blank">HTML Academy</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
