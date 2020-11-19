@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+  </head>
+  <body class="page-body">
+    <header class="page-header">
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">
+          <span class="visialy-hidden">Открыть меню</span>
+        </button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list">
+            <li class="main-nav__item main-nav__item--active">
+              <a class="main-nav__link" href="/">Главная</a>
+            </li>
+            <li class="main-nav__item">Фото и видео</li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="/feedback">Форма отзыва</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="https://htmlacademy.ru/intensive/adaptive" target="blank">HTML Academy</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <a class="page-header__logo" href="/">
+        <img class="logo" src="https://via.placeholder.com/150x150" alt="City of Sedona">
+      </a>
+    </header>
+    <main class="page-main">
+      <div class="signboard-small signboard-small__wrapper">
+        <img class="signboard-small__img" src="https://via.placeholder.com/150x150" alt="Welcome to Sedona">
+      </div>
+      <article class="fotogallery fotogallery__wrapper">
+        <div class="gallery-preview gallery-preview__wrapper">
+          <h1 class="gallery-preview__header">Фото и видео</h1>
+          <p class="gallery-preview__text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+        </div>
+        <figure class="fotogallery__block fotogallery__block--large">
+          <a class="fotogallery__full-size-img" href="#" target="blank">
+            <img class="fotogallery__img" src="https://via.placeholder.com/150x150" alt="Неродные просторы">
+          </a>
+          <figcaption class="fotogallery__caption">
+            <span class="fotogallery__header">Неродные просторы</span>
+            <span class="fotogallery__author">Автор фото: Борис</span>
+            <button class="fotogallery__likebutton">Мне нравиться</button>
+            <span class="fotogallery__likestats">1350</span>
+          </figcaption>
+        </figure>
+        <figure class="fotogallery__block">
+          <a class="fotogallery__full-size-img" href="#" target="blank">
+            <img class="fotogallery__img" src="https://via.placeholder.com/150x150" alt="Местная растительность">
+          </a>
+          <figcaption class="fotogallery__caption">
+            <span class="fotogallery__header">Местная растительность</span>
+            <span class="fotogallery__author">Автор фото: Сергей</span>
+            <button class="fotogallery__likebutton">Мне нравиться</button>
+            <span class="fotogallery__likestats">143</span>
+          </figcaption>
+        </figure>
+        <figure class="fotogallery__block">
+          <a class="fotogallery__full-size-img" href="#" target="blank">
+            <img class="fotogallery__img" src="https://via.placeholder.com/150x150" alt="Дорога на север">
+          </a>
+          <figcaption class="fotogallery__caption">
+            <span class="fotogallery__header">Дорога на север</span>
+            <span class="fotogallery__author">Автор фото: Петр</span>
+            <button class="fotogallery__likebutton">Мне нравиться</button>
+            <span class="fotogallery__likestats">96</span>
+          </figcaption>
+        </figure>
+        <figure class="fotogallery__block">
+            <a class="fotogallery__full-size-img" href="#" target="blank">
+              <img class="fotogallery__img" src="https://via.placeholder.com/150x150" alt="Мост Дьявола">
+            </a>
+            <figcaption class="fotogallery__caption">
+              <span class="fotogallery__header">Мост Дьявола</span>
+              <span class="fotogallery__author">Автор фото: Антон</span>
+              <button class="fotogallery__likebutton">Мне нравиться</button>
+              <span class="fotogallery__likestats">254</span>
+            </figcaption>
+        </figure>
+      </article>
+      <section class="videopresentation videopresentation__wrapper">
+        <h2 class="videopresentation__header">Все еще сомневаетесь?</h2>
+        <p class="videopresentation_text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+        <div class="videopresentation__preview">
+          <img class="videopresentation__preview-img" src="https://via.placeholder.com/150x150" alt="">
+        </div>
+        <div class="videopresentation__controllers-box">
+          <div class="videopresentation__scroll-bar">
+            <div class="videopresentation__scale"></div>
+            <div class="videopresentation__video-toggle"></div>
+          </div>
+          <div class="videopresentation__buttons-panel">
+            <label class="videopresentation__start-over">
+              <button class="videopresentation__start-over-button">Запустить заново</button>
+            </label>
+            <label class="videopresentation__closed-captions">
+              <button class="videopresentation__closed-captions-button">Субтитры</button>
+            </label>
+            <label class="videopresentation__full-screen">
+              <button class="videopresentation__full-screen-button">Во весь экран</button>
+            </label>
+        </div>
+        </div>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <div class="footer footer__wrapper">
+        <div class="footer-hashtag">
+          <span class="footer-hashtag__text">#visitsedona</span>
+        </div>
+        <div class="footer-social social">
+          <ul class="footer-social__list">
+            <li class="footer-social__item">
+              <a class="social__link social__link--twitter" href="#" target="blank">Twitter</a>
+            </li>
+            <li class="footer-social__item">
+              <a class="social__link social__link--facebook" href="#" target="blank">Facebook</a>
+            </li>
+            <li class="footer-social__item">
+              <a class="social__link social__link--youtube" href="#" target="blank">Youtube</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-copyright copyright">
+          <span class="footer-copyright__text copyright__text">Разработано</span>
+          <a class="footer-copyright__logo copyright__logo" href="https://htmlacademy.ru/intensive/adaptive" target="blank">HTML Academy</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
