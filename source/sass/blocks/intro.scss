@@ -1,0 +1,27 @@
+.intro {
+  background-color: #ffffff;
+}
+
+.intro__wrapper {
+  padding-top: 32px;
+  padding-bottom: 27px;
+}
+
+.intro__header {
+  font-family: $fontbold;
+  font-size: 18px;
+  line-height: 26px;
+  color: $black;
+  font-weight: bold;
+  text-align: center;
+  vertical-align: center;
+}
+
+.intro__text {
+  font-family: $font;
+  font-size: 14px;
+  line-height: 26px;
+  color: $darkbrown;
+  text-align: center;
+  vertical-align: center;
+}

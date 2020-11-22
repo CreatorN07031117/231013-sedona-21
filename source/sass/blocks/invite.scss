@@ -1,0 +1,36 @@
+.invite {
+  background-color: $white;
+  text-align: center;
+  vertical-align: center;
+}
+
+.invite__wrapper {
+  padding-top: 33px;
+  padding-bottom: 49px;
+}
+
+.invite__header {
+  font-family: $fontbold;
+  font-size: 21px;
+  line-height: 26px;
+  color: $black;
+  vertical-align: center;
+}
+
+.invite__text {
+  font-family: $font;
+  font-size: 14px;
+  line-height: 24px;
+  color: $darkbrown;
+  vertical-align: center;
+}
+
+.invite__button {
+  padding-top: 14px;
+  padding-bottom: 18px;
+  background-color: $blue;
+  font-family: $fontbold;
+  font-size: 21px;
+  line-height: 26px;
+  color: $white;
+}

@@ -1,1 +1,17 @@
-// Начните писать стили здесь
+/*Шрифты и переменны*/
+@import "../sass/global/global.scss";
+/*Стили блоков*/
+@import "../sass/blocks/page.scss";
+@import "../sass/blocks/main-nav.scss";
+@import "../sass/blocks/page-header.scss";
+@import "../sass/blocks/signboard.scss";
+@import "../sass/blocks/intro.scss";
+@import "../sass/blocks/advantages-alone.scss";
+@import "../sass/blocks/feature.scss";
+@import "../sass/blocks/advantages.scss";
+@import "../sass/blocks/invite.scss";
+@import "../sass/blocks/map.scss";
+@import "../sass/blocks/footer.scss";
+@import "../sass/blocks/footer-hashtag.scss";
+@import "../sass/blocks/footer-social.scss";
+@import "../sass/blocks/footer-copyright.scss";
