@@ -9,16 +9,17 @@
 }
 
 .advantages-alone__header {
-  font-family: $fontbold, sans-serif;
+  font-family: $fontbold;
   font-size: 18px;
   line-height: 26px;
   color: $white;
+  font-weight: bold;
   text-align: center;
   vertical-align: center;
 }
 
 .advantages-alone__number {
-  font-family: $font, sans-serif;
+  font-family: $font;
   font-size: 14px;
   line-height: 21px;
   color: $white;
