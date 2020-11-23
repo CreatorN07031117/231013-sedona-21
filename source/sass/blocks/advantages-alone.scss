@@ -5,7 +5,7 @@
   background-color: $blue;
 
   text-align: center;
-  vertical-align: center;
+  vertical-align: middle;
 }
 
 .advantages-alone__header {
@@ -15,7 +15,7 @@
   color: $white;
   font-weight: bold;
   text-align: center;
-  vertical-align: center;
+  vertical-align: middle;
 }
 
 .advantages-alone__number {
@@ -24,14 +24,14 @@
   line-height: 21px;
   color: $white;
   text-align: center;
-  vertical-align: center;
+  vertical-align: middle;
 }
 
 .advantages-alone__text {
-  font-family: $font, sans-serif;
+  font-family: $font;
   font-size: 14px;
   line-height: 21px;
   color: $white;
   text-align: center;
-  vertical-align: center;
+  vertical-align: middle;
 }
