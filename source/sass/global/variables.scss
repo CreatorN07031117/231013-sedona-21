@@ -1,7 +1,7 @@
 /*Шрифты*/
 
-$font: "PT Sans";
-$fontbold: "PT Sans Bold";
+$font: "PT Sans", "Tahoma", sans-serif;
+$fontbold: "PT Sans Bold", "Tahoma", sans-serif;
 
 /*Цвета*/
 
@@ -11,3 +11,4 @@ $blue: #81b3d2;
 $darkbrown: #333333;
 $lightgrey: #eeeeee;
 $grey: #e6e6e6;
+$covergrey: #f2f2f2;
