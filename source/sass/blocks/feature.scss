@@ -1,0 +1,28 @@
+.feature {
+  padding-top: 35px;
+  padding-bottom: 35px;
+
+
+  background-color: $white;
+}
+
+.feature__content {
+  padding-left: 52px;
+}
+
+.feature__header {
+  font-family: $fontbold;
+  font-size: 18px;
+  line-height: 26px;
+  color: $black;
+  font-weight: bold;
+  vertical-align: middle;
+}
+
+.feature__text {
+  font-family: $font;
+  font-size: 14px;
+  line-height: 21px;
+  color: $darkbrown;
+  vertical-align: middle;
+}

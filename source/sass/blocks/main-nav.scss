@@ -1,0 +1,16 @@
+.main-nav {
+  background-color: $blue;
+  font-family: $fontbold;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 40px;
+  color: $white;
+}
+
+.main-nav__item {
+  padding-top: 10px;
+  padding-bottom: 5px;
+  list-style: none;
+  text-align: center;
+  vertical-align: middle;
+}

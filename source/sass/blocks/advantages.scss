@@ -1,0 +1,41 @@
+.advantages {
+  background-color: $lightgrey;
+
+  text-align: center;
+  vertical-align: center;
+}
+
+.advantages__content {
+  padding-top: 26px;
+  padding-bottom: 24px;
+  border-bottom: solid 1px $grey;
+}
+
+.advantages__content:last-child {
+  border-bottom: none;
+}
+
+.advantages__header {
+  font-family: $fontbold;
+  font-size: 18px;
+  line-height: 26px;
+  color: $black;
+  font-weight: bold;
+  vertical-align: middle;
+}
+
+.advantages__number {
+  font-family: $font;
+  font-size: 14px;
+  line-height: 21px;
+  color: $darkbrown;
+  vertical-align: middle;
+}
+
+.advantages__text {
+  font-family: $font;
+  font-size: 14px;
+  line-height: 21px;
+  color: $darkbrown;
+  vertical-align: middle;
+}
