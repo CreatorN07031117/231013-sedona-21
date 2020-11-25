@@ -1,0 +1,40 @@
+.feedback-usertext__wrapper {
+  padding-top: 15px;
+  padding-bottom: 25px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.feedback-usertext__header {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-bottom: 19px;
+
+  font-family: $fontbold;
+  font-size: 18px;
+  line-height: 26px;
+  color: $black;
+  font-weight: bold;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.feedback-usertext__field {
+  resize: inherit;
+  width: 100%;
+  min-width: 240px;
+  height: 160px;
+  padding-top: 13px;
+  padding-bottom: 29px;
+
+  background-color: $covergrey;
+  border: none;
+
+  font-family: $fontbold;
+  font-size: 18px;
+  line-height: 26px;
+  color: $black;
+  font-weight: bold;
+  vertical-align: middle;
+  text-transform: none;
+}

@@ -1,0 +1,30 @@
+.feedback-preview {
+  background-color: $white;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.feedback-preview__wrapper {
+  padding-top: 36px;
+  padding-bottom: 16px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.feedback-preview__header {
+  font-family: $fontbold;
+  font-size: 18px;
+  line-height: 26px;
+  color: $black;
+  font-weight: bold;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.feedback-preview__text {
+  font-family: $font;
+  font-size: 14px;
+  line-height: 24px;
+  color: $darkbrown;
+  text-align: center;
+  vertical-align: middle;
+}

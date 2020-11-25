@@ -1,7 +1,7 @@
 /*Шрифты и переменныe*/
-@import "../sass/global/global.scss";
 @import "../sass/global/fonts.scss";
 @import "../sass/global/variables.scss";
+@import "../sass/global/global.scss";
 /*Стили блоков*/
 @import "../sass/blocks/page.scss";
 @import "../sass/blocks/main-nav.scss";
@@ -17,3 +17,13 @@
 @import "../sass/blocks/footer-hashtag.scss";
 @import "../sass/blocks/footer-social.scss";
 @import "../sass/blocks/footer-copyright.scss";
+/*стили страницы формы*/
+@import "../sass/blocks/signboard-small.scss";
+@import "../sass/blocks/feedback-preview.scss";
+@import "../sass/blocks/feedback-form.scss";
+@import "../sass/blocks/feedback-username.scss";
+@import "../sass/blocks/feedback-user-contacts.scss";
+@import "../sass/blocks/feedback-feeling.scss";
+@import "../sass/blocks/feedback-attractions.scss";
+@import "../sass/blocks/feedback-usertext.scss";
+@import "../sass/blocks/feedback-finish.scss";

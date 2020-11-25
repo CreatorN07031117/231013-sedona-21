@@ -1,0 +1,46 @@
+.feedback-user-contacts {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.feedback-user-contacts__wrapper {
+  padding-top: 20px;
+  padding-bottom: 28px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.feedback-user-contacts__header {
+  margin-top: 0;
+  margin-bottom: 0;
+
+  font-family: $fontbold;
+  font-size: 18px;
+  line-height: 26px;
+  color: $black;
+  font-weight: bold;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.feedback-user-contacts__caption {
+  font-family: $font;
+  font-size: 14px;
+  line-height: 26px;
+  color: $darkbrown;
+  vertical-align: middle;
+}
+
+.feedback-user-contacts__field {
+  padding-top: 18px;
+  padding-bottom: 14px;
+  padding-left: 22px;
+
+  background-color: $covergrey;
+  border: none;
+
+  font-family: $fontbold;
+  font-size: 18px;
+  line-height: 26px;
+  color: $black;
+  vertical-align: middle;
+}
