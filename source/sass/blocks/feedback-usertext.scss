@@ -6,8 +6,8 @@
 }
 
 .feedback-usertext__header {
-  margin-top: 0;
-  margin-bottom: 0;
+  margin: 0;
+  padding: 0;
   padding-bottom: 19px;
 
   font-family: $fontbold;
@@ -37,4 +37,10 @@
   font-weight: bold;
   vertical-align: middle;
   text-transform: none;
+}
+
+.feedback-usertext__field::placeholder {
+  color: $black;
+  padding-left: 20px;
+  padding-right: 20px;
 }
