@@ -1,0 +1,36 @@
+.feedback-attractions {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.feedback-attractions__wrapper {
+  padding-top: 15px;
+  padding-bottom: 25px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.feedback-attractions__header {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 19px;
+
+  font-family: $fontbold;
+  font-size: 18px;
+  line-height: 26px;
+  color: $black;
+  font-weight: bold;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.feedback-attractions__caption {
+  padding-left: 23px;
+
+  font-family: $fontbold;
+  font-size: 18px;
+  line-height: 26px;
+  color: $black;
+  font-weight: bold;
+  vertical-align: middle;
+  text-transform: none;
+}

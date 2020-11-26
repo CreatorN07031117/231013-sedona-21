@@ -1,0 +1,28 @@
+.feedback-finish__wrapper {
+  padding-top: 51px;
+  padding-bottom: 48px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.feedback-finish__button {
+  width: 100%;
+  padding-top: 18px;
+  padding-bottom: 14px;
+
+  background-color: $blue;
+  border: none;
+
+  font-family: $fontbold;
+  font-size: 21px;
+  line-height: 26px;
+  color: $white;
+  font-weight: bold;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+}
+
+.feedback-finish__required {
+  visibility: hidden;
+}

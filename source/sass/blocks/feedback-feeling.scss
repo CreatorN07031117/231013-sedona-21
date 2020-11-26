@@ -1,0 +1,36 @@
+.feedback-feeling {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.feedback-feeling__wrapper {
+  padding-top: 20px;
+  padding-bottom: 25px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.feedback-feeling__header {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 21px;
+
+  font-family: $fontbold;
+  font-size: 18px;
+  line-height: 26px;
+  color: $black;
+  font-weight: bold;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.feedback-feeling__caption {
+  padding-left: 22px;
+
+  font-family: $fontbold;
+  font-size: 18px;
+  line-height: 26px;
+  color: $black;
+  font-weight: bold;
+  vertical-align: middle;
+  text-transform: none;
+}

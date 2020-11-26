@@ -1,0 +1,52 @@
+.feedback-username {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.feedback-username__wrapper {
+  padding-top: 6px;
+  padding-bottom: 25px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.feedback-username__header {
+  margin: 0;
+  padding: 0;
+
+  font-family: $fontbold;
+  font-size: 18px;
+  line-height: 26px;
+  color: $black;
+  font-weight: bold;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.feedback-username__caption {
+  padding-right: 13px;
+
+  font-family: $font;
+  font-size: 14px;
+  line-height: 26px;
+  color: $darkbrown;
+  vertical-align: middle;
+}
+
+.feedback-username__field {
+  padding-top: 18px;
+  padding-bottom: 14px;
+  padding-left: 22px;
+
+  background-color: $covergrey;
+  border: none;
+
+  font-family: $fontbold;
+  font-size: 18px;
+  line-height: 26px;
+  color: $black;
+  vertical-align: middle;
+}
+
+.feedback-username__field::placeholder {
+  color: $black;
+}
