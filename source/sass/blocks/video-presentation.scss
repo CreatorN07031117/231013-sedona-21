@@ -1,14 +1,14 @@
-.videopresentation {
+.video-presentation {
   background-color: $white;
 }
 
-.videopresentation__wrapper {
+.video-presentation__wrapper {
   width: 100%;
   padding-top: 32px;
   padding-bottom: 49px;
 }
 
-.videopresentation__header {
+.video-presentation__header {
   margin: 0;
 
   font-family: $fontbold;
@@ -20,7 +20,7 @@
   vertical-align: middle;
 }
 
-.videopresentation_text {
+.video-presentation_text {
   margin: 0;
   padding-left: 20px;
   padding-right: 20px;
@@ -33,12 +33,12 @@
   vertical-align: middle;
 }
 
-.videopresentation__preview {
+.video-presentation__preview {
   width: 100%;
   height: 201px;
 }
 
-.videopresentation__buttons-panel {
+.video-presentation__buttons-panel {
   height: 66px;
   margin-left: 20px;
   margin-right: 20px;
@@ -46,14 +46,14 @@
   background-color: $covergrey;
 }
 
-.videopresentation__start-over-button {
+.video-presentation__start-over-button {
   border: none;
 }
 
-.videopresentation__closed-captions-button {
+.video-presentation__closed-captions-button {
   border: none;
 }
 
-.videopresentation__full-screen-button {
+.video-presentation__full-screen-button {
   border: none;
 }
