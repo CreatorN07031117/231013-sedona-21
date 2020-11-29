@@ -1,0 +1,53 @@
+.fotogallery {
+  background-color: $white;
+}
+
+.fotogallery__img {
+  min-width: 280px;
+  min-height: 280px;
+}
+
+.fotogallery__block {
+  margin: 0;
+  padding-top: 21px;
+  padding-bottom: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.fotogallery__caption {
+  padding-top: 11px;
+}
+
+.fotogallery__header {
+  font-family: $fontbold;
+  font-size: 14px;
+  line-height: 24px;
+  color: $black;
+  font-weight: bold;
+  vertical-align: middle;
+}
+
+.fotogallery__author {
+  font-family: $font;
+  font-size: 14px;
+  line-height: 24px;
+  color: $darkbrown;
+  vertical-align: middle;
+  text-transform: none;
+}
+
+.fotogallery__likebutton {
+  visibility: hidden;
+}
+
+.fotogallery__likestats {
+  font-family: $fontbold;
+  font-size: 14px;
+  line-height: 24px;
+  color: $black;
+  font-weight: bold;
+  vertical-align: middle;
+}
