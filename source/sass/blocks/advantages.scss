@@ -1,3 +1,21 @@
+.advantages__wrapper {
+  min-width: 284px;
+  padding-left: 18px;
+  padding-right: 18px;
+
+  display: grid;
+}
+
+@media (min-width: $tablet-width) {
+  .advantages__wrapper {
+    padding-left: 0;
+    padding-right: 0;
+
+    display: grid;
+    grid-template-columns: 33% 34% 33%;
+  }
+}
+
 .advantages {
   background-color: $lightgrey;
 
@@ -7,15 +25,40 @@
 
 .advantages__content {
   padding-top: 26px;
-  padding-bottom: 24px;
+  padding-bottom: 26px;
+
   border-bottom: solid 1px $grey;
+}
+
+@media (min-width: $tablet-width) {
+  .advantages__content {
+    padding-top: 42px;
+    padding-bottom: 62px;
+    padding-left: 32px;
+    padding-right: 32px;
+
+    border-bottom: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advantages__content {
+    padding-left: 57px;
+    padding-right: 57px;
+  }
 }
 
 .advantages__content:last-child {
   border-bottom: none;
 }
 
+/*Стили для заголовка и текста*/
+
 .advantages__header {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 10px;
+
   font-family: $fontbold;
   font-size: 18px;
   line-height: 26px;
@@ -24,18 +67,48 @@
   vertical-align: middle;
 }
 
+@media (min-width: $tablet-width) {
+  .advantages__header {
+    width: 122px;
+    margin-left: auto;
+    margin-right: auto;
+
+    font-family: $fontbold;
+    font-size: 21px;
+    line-height: 26px;
+
+    display: block;
+  }
+}
+
 .advantages__number {
   font-family: $font;
   font-size: 14px;
   line-height: 21px;
   color: $darkbrown;
   vertical-align: middle;
+
+  display: block;
 }
 
 .advantages__text {
+  margin: 0;
+  padding: 0;
+  padding-top: 16px;
+  padding-bottom: 24px;
+
   font-family: $font;
   font-size: 14px;
   line-height: 21px;
   color: $darkbrown;
   vertical-align: middle;
+
+  display: block;
+}
+
+@media (min-width: $tablet-width) {
+  .advantages__text {
+    padding-top: 22px;
+    padding-bottom: 0;
+  }
 }

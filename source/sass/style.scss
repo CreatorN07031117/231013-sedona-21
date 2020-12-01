@@ -2,10 +2,16 @@
 @import "../sass/global/fonts.scss";
 @import "../sass/global/variables.scss";
 @import "../sass/global/global.scss";
-/*Стили блоков*/
+/*Шапка и подвал*/
 @import "../sass/blocks/page.scss";
 @import "../sass/blocks/main-nav.scss";
 @import "../sass/blocks/page-header.scss";
+@import "../sass/blocks/footer.scss";
+@import "../sass/blocks/footer-hashtag.scss";
+@import "../sass/blocks/footer-social.scss";
+@import "../sass/blocks/footer-copyright.scss";
+@import "../sass/blocks/page-main.scss";
+/*Стили главной*/
 @import "../sass/blocks/signboard.scss";
 @import "../sass/blocks/intro.scss";
 @import "../sass/blocks/advantages-alone.scss";
@@ -13,11 +19,7 @@
 @import "../sass/blocks/advantages.scss";
 @import "../sass/blocks/invite.scss";
 @import "../sass/blocks/map.scss";
-@import "../sass/blocks/footer.scss";
-@import "../sass/blocks/footer-hashtag.scss";
-@import "../sass/blocks/footer-social.scss";
-@import "../sass/blocks/footer-copyright.scss";
-/*стили страницы формы*/
+/*Стили страницы формы*/
 @import "../sass/blocks/signboard-small.scss";
 @import "../sass/blocks/feedback-preview.scss";
 @import "../sass/blocks/feedback-form.scss";

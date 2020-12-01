@@ -1,9 +1,47 @@
-.signboard {
+.signboard__wrapper {
+  min-width: 320px;
   width: 100%;
   height: 389px;
   padding-top: 90px;
 
+  display: grid;
+}
+
+@media (min-width: $tablet-width) {
+  .signboard__wrapper {
+    height: 518px;
+    padding-top: 77px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .signboard__wrapper {
+    height: 518px;
+    padding-top: 82px;
+  }
+}
+
+.signboard {
   background-color: #e4f1f9;
-  background-image: url("../img/back-desktop.png");
+  background-image: url("../img/back-mobile.png");
   background-size: cover;
+}
+
+@media (min-width: $tablet-width) {
+  .signboard {
+    background-image: url("../img/back-desktop.png");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .signboard {
+    background-image: url("../img/back-desktop.png");
+  }
+}
+
+.signboard__index-img {
+  margin-left: auto;
+  margin-right: auto;
 }
