@@ -9,20 +9,3 @@
     grid-column-end: 2;
   }
 }
-
-.footer-hashtag__text {
-  font-family: $fontbold;
-  font-size: 21px;
-  line-height: 26px;
-  color: $black;
-  font-weight: bold;
-}
-
-@media (min-width: $tablet-width) {
-  .footer-hashtag__text {
-    padding-top: 13px;
-    padding-bottom: 9px;
-    padding-left: 28px;
-    padding-right: 28px;
-  }
-}
