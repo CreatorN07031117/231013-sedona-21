@@ -1,0 +1,13 @@
+.page-main {
+  margin-left: auto;
+  margin-right: auto;
+
+  display: grid;
+  grid-template-columns: auto;
+}
+
+@media (min-width: $desktop-width) {
+  .page-main {
+    width: $desktop-width;
+  }
+}

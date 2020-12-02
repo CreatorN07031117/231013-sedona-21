@@ -3,11 +3,27 @@
   vertical-align: middle;
 }
 
+@media (min-width: $tablet-width) {
+  .footer-copyright {
+    grid-column-start: 3;
+    grid-column-end: 4;
+  }
+}
+
 .footer-copyright__text {
   font-family: $font;
   font-size: 14px;
   line-height: 26px;
   color: $black;
+
+  display: block;
+}
+
+@media (min-width: $tablet-width) {
+  .footer-copyright__text {
+    padding-left: 68px;
+    padding-right: 28px;
+  }
 }
 
 .footer-copyright__logo {

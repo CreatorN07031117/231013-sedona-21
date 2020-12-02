@@ -4,35 +4,34 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body class="page-body">
     <header class="page-header">
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
+          <span class="visually-hidden">Закрыть меню</span>
         </button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list">
-            <li class="main-nav__item main-nav__item--active">Главная</li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="gallery.html">Фото и видео</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="feedback.html">Форма отзыва</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="https://htmlacademy.ru/intensive/adaptive" target="blank">HTML Academy</a>
-            </li>
-          </ul>
-        </div>
+        <ul class="main-nav__list main-nav__wrapper">
+          <li class="main-nav__item main-nav__item--active">Главная</li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="gallery.html">Фото и видео</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="feedback.html">Форма отзыва</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="https://htmlacademy.ru/intensive/adaptive" target="blank">HTML Academy</a>
+          </li>
+        </ul>
       </nav>
-      <a class="page-header__logo" href="/">
-        <img class="logo" src="https://via.placeholder.com/150x150" alt="City of Sedona">
-      </a>
+        <a class="page-header__logo" href="/">
+          <img class="logo" src="img/logotype-mobile.png" alt="City of Sedona">
+        </a>
     </header>
     <main class="page-main">
       <div class="signboard signboard__wrapper">
-        <img class="signboard__index-img" src="https://via.placeholder.com/150x150" alt="Welcome to Sedona">
+        <img class="signboard__index-img" src="img/text-index.png" alt="Welcome to Sedona">
       </div>
       <h1 class="visually-hidden"></h1>
       <section class="intro intro__wrapper">
@@ -40,13 +39,13 @@
         <p class="intro__text">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон</p>
       </section>
       <section class="advantages-alone advantages-alone__wrapper">
-        <div class="advantages-alone__content">
+        <div class="advantages-alone__content advantages-alone__content--real-town">
           <h3 class="advantages-alone__header">Настоящий городок</h3>
           <span class="advantages-alone__number">№1</span>
           <p class="advantages-alone__text">Седона не аттракцион для туристов, там течет своя жизнь</p>
         </div>
-        <div class="advantages-img advantages-img__wrapper">
-          <img class="advantages-img__img  advantages-img__img--real-town " src="https://via.placeholder.com/150x150" alt="Настоящий городок">
+        <div class="advantages-img advantages-img__wrapper--real-town">
+          <img class="advantages-img__img  advantages-img__img--real-town" src="img/photo-city@1x_1.png" alt="Настоящий городок">
         </div>
       </section>
       <section class="feature feature__wrapper">
@@ -64,13 +63,13 @@
         </div>
       </section>
       <section class="advantages-alone advantages-alone__wrapper">
-        <div class="advantages-alone__content">
+        <div class="advantages-alone__content advantages-alone__content--devil-bridge">
           <h3 class="advantages-alone__header">Там есть мост дьявола</h3>
           <span class="advantages-alone__number">№2</span>
           <p class="advantages-alone__text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
         </div>
-        <div class="advantages-img advantages-img__wrapper">
-          <img class="advantages-img__img advantages-img__img--devil-bridge" src="https://via.placeholder.com/150x150" alt="Настоящий городок">
+        <div class="advantages-img advantages-img__wrapper--devil-bridge">
+          <img class="advantages-img__img advantages-img__img--devil-bridge" src="img/photo-bridge@1x_1.png" alt="Настоящий городок" height="">
         </div>
       </section>
       <section class="advantages advantages__wrapper">
@@ -82,7 +81,7 @@
         <div class="advantages__content">
           <h3 class="advantages__header">Красивая дорога</h3>
           <span class="advantages__number">№4</span>
-          <p class="advantages__text">Ехать в Седону из Лас-Вегаса совсем не скучно</p>
+          <p class="advantages__text">Ехать в Седону из <nobr>Лас-Вегаса</nobr> совсем не скучно</p>
         </div>
         <div class="advantages__content">
           <h3 class="advantages__header">Мало туристов</h3>
@@ -101,8 +100,8 @@
     </main>
     <footer class="page-footer">
       <div class="footer footer__wrapper">
-        <div class="footer-hashtag">
-          <span class="footer-hashtag__text">#visitsedona</span>
+        <div class="footer-hashtag hashtag">
+          <span class="hashtag__text">#visitsedona</span>
         </div>
         <div class="footer-social social">
           <ul class="footer-social__list">

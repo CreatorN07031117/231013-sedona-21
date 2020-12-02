@@ -3,10 +3,9 @@
   vertical-align: middle;
 }
 
-.footer-hashtag__text {
-  font-family: $fontbold;
-  font-size: 21px;
-  line-height: 26px;
-  color: $black;
-  font-weight: bold;
+@media (min-width: $tablet-width) {
+  .footer-hashtag {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
 }
