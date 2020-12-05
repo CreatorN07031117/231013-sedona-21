@@ -1,38 +1,56 @@
+.feedback-username__wrapper {
+  padding-top: 20px;
+  padding-bottom: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@media (min-width: $tablet-width) {
+  .feedback-username__wrapper {
+    padding-top: 0;
+    padding-bottom: 73px;
+    padding-left: 58px;
+    padding-right: 60px;
+
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .feedback-username__wrapper {
+    padding-bottom: 71px;
+    padding-left: 79px;
+    padding-right: 120px;
+  }
+}
+
 .feedback-username {
   border-bottom: 1px solid #e5e5e5;
 }
 
-.feedback-username__wrapper {
-  padding-top: 6px;
-  padding-bottom: 25px;
-  padding-left: 20px;
-  padding-right: 20px;
+@media (min-width: $tablet-width) {
+  .feedback-username {
+    border-bottom: none;
+  }
 }
 
-.feedback-username__header {
-  margin: 0;
-  padding: 0;
+/*Стили полей*/
 
-  font-family: $fontbold;
-  font-size: 18px;
-  line-height: 26px;
-  color: $black;
-  font-weight: bold;
-  text-align: center;
-  vertical-align: middle;
-}
+.feedback-username__label {
+  padding-bottom: 20px;
 
-.feedback-username__caption {
-  padding-right: 13px;
-
-  font-family: $font;
-  font-size: 14px;
-  line-height: 26px;
-  color: $darkbrown;
-  vertical-align: middle;
+  display: flex;
 }
 
 .feedback-username__field {
+  width: 100%;
   padding-top: 18px;
   padding-bottom: 14px;
   padding-left: 22px;
@@ -49,4 +67,54 @@
 
 .feedback-username__field::placeholder {
   color: $black;
+}
+
+/*Подписи к форме*/
+
+.feedback-username__header {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 20px;
+
+  font-family: $fontbold;
+  font-size: 18px;
+  line-height: 26px;
+  color: $black;
+  font-weight: bold;
+  text-align: center;
+  vertical-align: middle;
+}
+
+@media (min-width: $tablet-width) {
+  .feedback-username__header {
+    padding-bottom: 54px;
+
+    font-family: $fontbold;
+    font-size: 21px;
+    line-height: 26px;
+    color: $black;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .feedback-username__header {
+    text-align: left;
+  }
+}
+
+.feedback-username__caption {
+  padding-top: 18px;
+  padding-bottom: 14px;
+  padding-right: 13px;
+
+  font-family: $font;
+  font-size: 14px;
+  line-height: 26px;
+  color: $darkbrown;
+  vertical-align: middle;
+
+  display: block;
 }

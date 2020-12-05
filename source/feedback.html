@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона — форма отзыва</title>
     <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body class="page-body">
     <header class="page-header">
@@ -11,33 +12,31 @@
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list">
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="index.html">Главная</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="gallery.html">Фото и видео</a>
-            </li>
-            <li class="main-nav__item  main-nav__item--active">Форма отзыва</li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="https://htmlacademy.ru/intensive/adaptive" target="blank">HTML Academy</a>
-            </li>
-          </ul>
-        </div>
+        <ul class="main-nav__list main-nav__wrapper">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="index.html">Главная</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="gallery.html">Фото и видео</a>
+          </li>
+          <li class="main-nav__item  main-nav__item--active">Форма отзыва</li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="https://htmlacademy.ru/intensive/adaptive" target="blank">HTML Academy</a>
+          </li>
+        </ul>
       </nav>
       <a class="page-header__logo" href="/">
-        <img class="logo" src="https://via.placeholder.com/150x150" alt="City of Sedona">
+        <img class="logo" src="img/logotype-mobile.png" alt="City of Sedona">
       </a>
     </header>
     <main class="page-main">
       <div class="signboard-small signboard-small__wrapper">
-        <img class="signboard-small__img" src="https://via.placeholder.com/150x150" alt="Welcome to Sedona">
+        <img class="signboard-small__img" src="img/SEDONA.png" alt="Welcome to Sedona">
       </div>
       <h1 class="visually-hidden"></h1>
       <section class="feedback-preview feedback-preview__wrapper">
         <h2 class="feedback-preview__header">Оставьте свой отзыв</h2>
-        <p class="feedback-preview__text">Помогите нашим отелям стать лучше! Оставьте свой отзыв о них,а также о посещенных вами достопримичательностях</p>
+        <p class="feedback-preview__text">Помогите нашим отелям стать лучше! Оставьте свой отзыв о них, а также о посещенных вами достопримичательностях</p>
       </section>
       <div class="feedback-form feedback-form__wrapper">
         <form class="feedback-form__form" action="https://echo.htmlacademy.ru" method="post">
@@ -59,7 +58,7 @@
           <div class="feedback-user-contacts  feedback-user-contacts__wrapper">
             <p class="feedback-user-contacts__header">Контактная информация:</p>
             <label class="feedback-user-contacts__label feedback-user-contacts__label--user-phone">
-              <span class="feedback-user-contacts__caption">Контактный телефон<sup>*</sup>:</span>
+              <span class="feedback-user-contacts__caption"><span class="feedback-user-contacts__caption--extend">Контактный</span> телефон<sup>*</sup>:</span>
               <input class="feedback-user-contacts__field feedback-user-contacts__field--phone" type="tel" placeholder="Введите телефон">
             </label>
             <label class="feedback-user-contacts__label feedback-user-contacts__label--user-email">
@@ -114,8 +113,8 @@
     </main>
     <footer class="page-footer">
       <div class="footer footer__wrapper">
-        <div class="footer-hashtag">
-          <span class="footer-hashtag__text">#visitsedona</span>
+        <div class="footer-hashtag hashtag">
+          <span class="hashtag__text">#visitsedona</span>
         </div>
         <div class="footer-social social">
           <ul class="footer-social__list">

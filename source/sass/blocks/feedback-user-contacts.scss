@@ -1,34 +1,71 @@
-.feedback-user-contacts {
-  border-bottom: 1px solid #e5e5e5;
-}
-
 .feedback-user-contacts__wrapper {
   padding-top: 20px;
   padding-bottom: 28px;
   padding-left: 20px;
   padding-right: 20px;
+
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto;
 }
 
-.feedback-user-contacts__header {
-  margin: 0;
-  padding: 0;
-
-  font-family: $fontbold;
-  font-size: 18px;
-  line-height: 26px;
-  color: $black;
-  font-weight: bold;
-  text-align: center;
-  vertical-align: middle;
+@media (min-width: $tablet-width) {
+  .feedback-user-contacts__wrapper {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
 }
 
-.feedback-user-contacts__caption {
-  font-family: $font;
-  font-size: 14px;
-  line-height: 26px;
-  color: $darkbrown;
-  vertical-align: middle;
+@media (min-width: $desktop-width) {
+  .feedback-user-contacts__wrapper {
+    padding-bottom: 52px;
+    padding-left: 120px;
+    padding-right: 120px;
+
+    grid-template-columns: 50% 50%;
+  }
 }
+
+.feedback-user-contacts {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+@media (min-width: $tablet-width) {
+  .feedback-user-contacts {
+    border-bottom: none;
+
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+}
+
+.feedback-user-contacts__label {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: $tablet-width) {
+  .feedback-user-contacts__label {
+    padding-bottom: 25px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .feedback-user-contacts__label {
+    padding-bottom: 0;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+}
+
+/*Стили полей*/
 
 .feedback-user-contacts__field {
   padding-top: 18px;
@@ -45,6 +82,73 @@
   vertical-align: middle;
 }
 
+@media (min-width: $desktop-width) {
+  .feedback-user-contacts__field {
+    width: 294px;
+  }
+}
+
 .feedback-user-contacts__field::placeholder {
   color: $black;
+}
+
+/*Подписи к форме*/
+
+.feedback-user-contacts__header {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 17px;
+
+  font-family: $fontbold;
+  font-size: 18px;
+  line-height: 26px;
+  color: $black;
+  font-weight: bold;
+  text-align: center;
+  vertical-align: middle;
+}
+
+@media (min-width: $tablet-width) {
+  .feedback-user-contacts__header {
+    padding-bottom: 20px;
+
+    font-family: $fontbold;
+    font-size: 21px;
+    line-height: 26px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .feedback-user-contacts__header {
+    padding-bottom: 71px;
+
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+}
+
+.feedback-user-contacts__caption {
+  padding-left: 22px;
+  padding-bottom: 7px;
+
+  font-family: $font;
+  font-size: 14px;
+  line-height: 26px;
+  color: $darkbrown;
+  vertical-align: middle;
+}
+
+@media (min-width: $desktop-width) {
+  .feedback-user-contacts__caption {
+    padding-left: 0;
+    padding-right: 15px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .feedback-user-contacts__caption--extend {
+    display: none;
+  }
 }

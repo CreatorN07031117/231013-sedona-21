@@ -1,3 +1,16 @@
+.feedback-form__form {
+  display: grid;
+  grid-template-columns: auto;
+}
+
+@media (min-width: $tablet-width) {
+  .feedback-form__form {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto auto auto auto;
+  }
+}
+
 .feedback-form {
   background-color: $white;
 }
