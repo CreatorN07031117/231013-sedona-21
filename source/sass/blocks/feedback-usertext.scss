@@ -3,7 +3,31 @@
   padding-bottom: 25px;
   padding-left: 20px;
   padding-right: 20px;
+
+  display: flex;
+  flex-direction: column;
 }
+
+@media (min-width: $tablet-width) {
+  .feedback-usertext__wrapper {
+    padding-top: 0;
+    padding-bottom: 29px;
+    padding-left: 60px;
+    padding-right: 60px;
+
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .feedback-usertext__wrapper {
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+}
+
+/*Стиль заголовка*/
 
 .feedback-usertext__header {
   margin: 0;
@@ -19,13 +43,30 @@
   vertical-align: middle;
 }
 
+@media (min-width: $tablet-width) {
+  .feedback-usertext__header {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 54px;
+
+    font-family: $fontbold;
+    font-size: 21px;
+    line-height: 26px;
+    color: $black;
+  }
+}
+
+/*Стиль поля*/
+
 .feedback-usertext__field {
   resize: inherit;
-  width: 100%;
+
   min-width: 240px;
   height: 160px;
   padding-top: 13px;
   padding-bottom: 29px;
+  padding-left: 20px;
+  padding-right: 20px;
 
   background-color: $covergrey;
   border: none;
@@ -41,6 +82,4 @@
 
 .feedback-usertext__field::placeholder {
   color: $black;
-  padding-left: 20px;
-  padding-right: 20px;
 }
