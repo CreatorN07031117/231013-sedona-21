@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body class="page-body">
     <header class="page-header">
@@ -11,28 +12,26 @@
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list">
-            <li class="main-nav__item main-nav__item--active">
-              <a class="main-nav__link" href="index.html">Главная</a>
-            </li>
-            <li class="main-nav__item">Фото и видео</li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="feedback.html">Форма отзыва</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="https://htmlacademy.ru/intensive/adaptive" target="blank">HTML Academy</a>
-            </li>
-          </ul>
-        </div>
+        <ul class="main-nav__list  main-nav__wrapper">
+          <li class="main-nav__item main-nav__item--active">
+            <a class="main-nav__link" href="index.html">Главная</a>
+          </li>
+          <li class="main-nav__item">Фото и видео</li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="feedback.html">Форма отзыва</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="https://htmlacademy.ru/intensive/adaptive" target="blank">HTML Academy</a>
+          </li>
+        </ul>
       </nav>
       <a class="page-header__logo" href="/">
-        <img class="logo" src="https://via.placeholder.com/150x150" alt="City of Sedona">
+        <img class="logo" src="img/logotype-mobile.png" alt="City of Sedona">
       </a>
     </header>
     <main class="page-main">
       <div class="signboard-small signboard-small__wrapper">
-        <img class="signboard-small__img" src="https://via.placeholder.com/150x150" alt="Welcome to Sedona">
+        <img class="signboard-small__img" src="img/SEDONA.png" alt="Welcome to Sedona">
       </div>
       <article class="fotogallery fotogallery__wrapper">
         <div class="gallery-preview gallery-preview__wrapper">
@@ -41,46 +40,62 @@
         </div>
         <figure class="fotogallery__block fotogallery__block--large">
           <a class="fotogallery__full-size-img" href="#" target="blank">
-            <img class="fotogallery__img" src="https://via.placeholder.com/150x150" alt="Неродные просторы">
+            <img class="fotogallery__img fotogallery__img--large" src="img/photo-1-desktop_1.png" alt="Неродные просторы">
           </a>
           <figcaption class="fotogallery__caption">
-            <span class="fotogallery__header">Неродные просторы</span>
-            <span class="fotogallery__author">Автор фото: Борис</span>
-            <button class="fotogallery__likebutton">Мне нравиться</button>
-            <span class="fotogallery__likestats">1350</span>
+            <div class="fotogallery__caption-text">
+              <span class="fotogallery__header">Неродные просторы</span>
+              <span class="fotogallery__author">Автор фото: Борис</span>
+            </div>
+            <div class="fotogallery__likebox">
+              <button class="fotogallery__likebutton">Мне нравиться</button>
+              <span class="fotogallery__likestats">1350</span>
+            </div>
           </figcaption>
         </figure>
         <figure class="fotogallery__block">
           <a class="fotogallery__full-size-img" href="#" target="blank">
-            <img class="fotogallery__img" src="https://via.placeholder.com/150x150" alt="Местная растительность">
+            <img class="fotogallery__img" src="img/photo-2-desktop_1.png" alt="Местная растительность">
           </a>
           <figcaption class="fotogallery__caption">
-            <span class="fotogallery__header">Местная растительность</span>
-            <span class="fotogallery__author">Автор фото: Сергей</span>
-            <button class="fotogallery__likebutton">Мне нравиться</button>
-            <span class="fotogallery__likestats">143</span>
+            <div class="fotogallery__caption-text">
+              <span class="fotogallery__header">Местная растительность</span>
+              <span class="fotogallery__author">Автор фото: Сергей</span>
+            </div>
+            <div class="fotogallery__likebox">
+              <button class="fotogallery__likebutton">Мне нравиться</button>
+              <span class="fotogallery__likestats">143</span>
+            </div>
           </figcaption>
         </figure>
         <figure class="fotogallery__block">
           <a class="fotogallery__full-size-img" href="#" target="blank">
-            <img class="fotogallery__img" src="https://via.placeholder.com/150x150" alt="Дорога на север">
+            <img class="fotogallery__img" src="img/photo-3-desktop_1.png" alt="Дорога на север">
           </a>
           <figcaption class="fotogallery__caption">
-            <span class="fotogallery__header">Дорога на север</span>
-            <span class="fotogallery__author">Автор фото: Петр</span>
-            <button class="fotogallery__likebutton">Мне нравиться</button>
-            <span class="fotogallery__likestats">96</span>
+            <div class="fotogallery__caption-text">
+              <span class="fotogallery__header">Дорога на север</span>
+              <span class="fotogallery__author">Автор фото: Петр</span>
+            </div>
+            <div class="fotogallery__likebox">
+              <button class="fotogallery__likebutton">Мне нравиться</button>
+              <span class="fotogallery__likestats">96</span>
+            </div>
           </figcaption>
         </figure>
         <figure class="fotogallery__block">
             <a class="fotogallery__full-size-img" href="#" target="blank">
-              <img class="fotogallery__img" src="https://via.placeholder.com/150x150" alt="Мост Дьявола">
+              <img class="fotogallery__img" src="img/photo-4-desktop_1.png" alt="Мост Дьявола">
             </a>
             <figcaption class="fotogallery__caption">
-              <span class="fotogallery__header">Мост Дьявола</span>
-              <span class="fotogallery__author">Автор фото: Антон</span>
-              <button class="fotogallery__likebutton">Мне нравиться</button>
-              <span class="fotogallery__likestats">254</span>
+              <div class="fotogallery__caption-text">
+                <span class="fotogallery__header">Мост Дьявола</span>
+                <span class="fotogallery__author">Автор фото: Антон</span>
+              </div>
+              <div class="fotogallery__likebox">
+                <button class="fotogallery__likebutton">Мне нравиться</button>
+                <span class="fotogallery__likestats">254</span>
+              </div>
             </figcaption>
         </figure>
       </article>
@@ -88,31 +103,29 @@
         <h2 class="video-presentation__header">Все еще сомневаетесь?</h2>
         <p class="video-presentation_text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
         <div class="video-presentation__preview">
-          <img class="video-presentation__preview-img" src="https://via.placeholder.com/150x150" alt="">
+          <img class="video-presentation__preview-img" src="img/video-desktop.png" alt="">
         </div>
-        <div class="video-presentation__controllers-box">
-          <div class="video-presentation__scroll-bar">
-            <div class="video-presentation__scale"></div>
-            <div class="video-presentation__video-toggle"></div>
-          </div>
-          <div class="video-presentation__buttons-panel">
-            <label class="video-presentation__start-over">
-              <button class="video-presentation__start-over-button">Запустить заново</button>
-            </label>
-            <label class="video-presentation__closed-captions">
-              <button class="video-presentation__closed-captions-button">Субтитры</button>
-            </label>
-            <label class="video-presentation__full-screen">
-              <button class="video-presentation__full-screen-button">Во весь экран</button>
-            </label>
+        <div class="video-presentation__scroll-bar">
+          <div class="video-presentation__scale"></div>
+          <div class="video-presentation__video-toggle"></div>
         </div>
+        <div class="video-presentation__buttons-panel">
+          <label class="video-presentation__start-over">
+            <button class="video-presentation__start-over-button">Запустить заново</button>
+          </label>
+          <label class="video-presentation__closed-captions">
+            <button class="video-presentation__closed-captions-button">Субтитры</button>
+          </label>
+          <label class="video-presentation__full-screen">
+            <button class="video-presentation__full-screen-button">Во весь экран</button>
+          </label>
         </div>
       </section>
     </main>
     <footer class="page-footer">
       <div class="footer footer__wrapper">
-        <div class="footer-hashtag">
-          <span class="footer-hashtag__text">#visitsedona</span>
+        <div class="footer-hashtag  hashtag">
+          <span class="hashtag__text">#visitsedona</span>
         </div>
         <div class="footer-social social">
           <ul class="footer-social__list">
