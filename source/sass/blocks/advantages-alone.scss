@@ -169,23 +169,25 @@
 }
 
 /*Треугольник на мобилке*/
-
-..advantages-alone__content--real-town {
+.advantages-alone__content--real-town {
   position: relative;
-  background-color: #607e34;
 }
 
-.advantages-alone__content--real-town::before {
-  content: "";
-  position: absolute;
-  z-index: 2;
-  top: 50px;
-  width: 100%;
-  min-width: 200px;
-  max-width: $tablet-width;
-  height: 57px;
+@media (max-width: 767px) {
+  .advantages-alone__content--real-town::before {
+    content: "";
+    position: absolute;
+    z-index: 2;
+    top: -20px;
+    left: 0;
+    width: 100%;
+    min-width: 200px;
+    max-width: $tablet-width;
+    height: 37px;
 
-  background: url("../img/intro-triangle-mob.svg") no-repeat;
-  background-size: 100% 57px;
-  background-position: bottom;
+    background: url("../img/intro-triangle-bottom.svg") no-repeat;
+
+    background-size: 100% 37px;
+    background-position: top;
+  }
 }
