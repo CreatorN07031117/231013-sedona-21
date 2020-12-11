@@ -1,0 +1,44 @@
+.social__logo--twitter {
+  width: 17.5px;
+  height: 14.57px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 12px;
+  padding-right: 12px;
+
+  fill: $white;
+
+  &:active {
+    fill-opacity: 0.3;
+  }
+}
+
+.social__logo--facebook {
+  width: 17.5px;
+  height: 14.57px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 12px;
+  padding-right: 12px;
+
+  fill: $white;
+
+  &:active {
+    fill-opacity: 0.3;
+  }
+}
+
+.social__logo--youtube {
+  width: 17.5px;
+  height: 14.57px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 12px;
+  padding-right: 12px;
+
+  fill: $white;
+
+  &:active {
+    fill-opacity: 0.3;
+  }
+}

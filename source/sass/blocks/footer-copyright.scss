@@ -1,6 +1,10 @@
 .footer-copyright {
   text-align: center;
   vertical-align: middle;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @media (min-width: $tablet-width) {
@@ -22,10 +26,22 @@
 @media (min-width: $tablet-width) {
   .footer-copyright__text {
     padding-left: 68px;
-    padding-right: 28px;
+    padding-right: 12px;
   }
 }
 
-.footer-copyright__logo {
-  visibility: hidden;
+.copyright__htmlacademy-logo {
+  width: 27px;
+  height: 34px;
+
+  fill: $black;
+
+  &:hover {
+    fill: $blue;
+  }
+
+  &:active {
+    fill: $black;
+    fill-opacity: 0.3;
+  }
 }

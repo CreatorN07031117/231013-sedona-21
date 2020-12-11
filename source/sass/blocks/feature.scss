@@ -98,3 +98,111 @@
     vertical-align: middle;
   }
 }
+
+/*Иконки*/
+
+.feature__content--accomodition {
+  position: relative;
+}
+
+.feature__content--accomodition::before {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 0;
+  width: 39px;
+  height: 37px;
+  background: url("../img/icon-house.svg");
+  background-position: 0 0;
+}
+
+@media (min-width: $tablet-width) {
+  .feature__content--accomodition::before {
+    content: "";
+    position: absolute;
+    top: -70px;
+    left: 48%;
+    transform: translateX(-50%);
+    width: 75px;
+    height: 76px;
+    background: url("../img/icon-house.svg");
+    background-position: 0 0;
+    background-size: cover;
+  }
+}
+
+.feature__content--souvenir {
+  position: relative;
+}
+
+@media (min-width: $tablet-width) {
+  .feature__content--souvenir {
+    grid-column-start: 3;
+    grid-column-end: 4;
+  }
+}
+
+.feature__content--souvenir::before {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 3px;
+  width: 32px;
+  height: 38px;
+  background: url("../img/icon-gift.svg");
+  background-position: 0 0;
+}
+
+@media (min-width: $tablet-width) {
+  .feature__content--souvenir::before {
+    content: "";
+    position: absolute;
+    top: -70px;
+    left: 49%;
+    transform: translateX(-50%);
+    width: 64px;
+    height: 75px;
+    background: url("../img/icon-gift.svg");
+    background-position: 0 0;
+    background-size: cover;
+  }
+}
+
+.feature__content--food {
+  position: relative;
+}
+
+@media (min-width: $tablet-width) {
+  .feature__content--food {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+}
+
+.feature__content--food::before {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 0;
+  width: 40px;
+  height: 35px;
+  background: url("../img/icon-burger.svg");
+  background-position: 0 0;
+}
+
+@media (min-width: $tablet-width) {
+  .feature__content--food::before {
+    content: "";
+    position: absolute;
+    top: -68px;
+    left: 49%;
+    transform: translateX(-50%);
+    width: 76px;
+    height: 68px;
+    background: url("../img/icon-burger.svg");
+    background-position: 0 0;
+    background-size: cover;
+  }
+}

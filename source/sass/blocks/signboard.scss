@@ -25,6 +25,10 @@
   background-color: #e4f1f9;
   background-image: url("../img/back-mobile.png");
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  position: relative;
 }
 
 @media (min-width: $tablet-width) {
@@ -44,4 +48,59 @@
 .signboard__index-img {
   margin-left: auto;
   margin-right: auto;
+}
+
+/*Треугольники*/
+
+.signboard::after {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  top: 422.5px;
+  width: 100%;
+  min-width: 200px;
+  max-width: $tablet-width;
+  height: 57px;
+
+  background: url("../img/intro-triangle-mob.svg") no-repeat;
+  background-size: 100% 57px;
+  background-position: bottom;
+}
+
+@media (min-width: $tablet-width) {
+  .signboard::after {
+    content: "";
+    position: absolute;
+    z-index: 2;
+    top: 525.5px;
+    width: 100%;
+    min-width: $tablet-width;
+    max-width: $desktop-width;
+    height: 70px;
+
+    background: url("../img/intro-triangle-tabl.svg") no-repeat;
+    background-size: 100% 57px;
+    background-position: bottom;
+
+    border-bottom: 0.5px solid $white;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .signboard::after {
+    content: "";
+    position: absolute;
+    z-index: 2;
+    top: 529px;
+    width: 100%;
+    min-width: $tablet-width;
+    max-width: $desktop-width;
+    height: 70px;
+
+    background: url("../img/intro-triangle-desk.svg") no-repeat;
+    background-size: 100% 57px;
+    background-position: bottom;
+
+    border-bottom: 0.5px solid $white;
+  }
 }

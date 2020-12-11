@@ -1,4 +1,6 @@
 .footer-social {
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 33px;
   padding-bottom: 45px;
   padding-left: 0;
@@ -19,8 +21,13 @@
 }
 
 .footer-social__list {
+  width: 150px;
   margin: 0;
   padding: 0;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .footer-social__item {
@@ -28,5 +35,25 @@
   padding: 0;
 
   list-style: none;
-  visibility: hidden;
+}
+
+
+.social__link {
+  margin: 0;
+  padding: 0;
+  width: 46px;
+  height: 48px;
+
+  font-size: 0;
+
+  display: block;
+  background-color: $blue;
+
+  &:hover {
+    background-color: $blue-hover;
+  }
+
+  &:active {
+    background-color: $blue-down;
+  }
 }
