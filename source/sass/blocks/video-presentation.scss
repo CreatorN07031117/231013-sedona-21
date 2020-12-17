@@ -50,6 +50,9 @@
   vertical-align: middle;
 
   display: block;
+
+  grid-column-start: 1;
+  grid-column-end: 2;
 }
 
 @media (min-width: $tablet-width) {
@@ -77,6 +80,9 @@
   color: $darkbrown;
   text-align: center;
   vertical-align: middle;
+
+  grid-column-start: 1;
+  grid-column-end: 2;
 }
 
 @media (min-width: $tablet-width) {
@@ -107,7 +113,7 @@
   line-height: 0;
 
   grid-column-start: 1;
-  grid-column-end: 5;
+  grid-column-end: 2;
   grid-row-start: 3;
   grid-row-end: 5;
 }
@@ -118,6 +124,11 @@
     padding-left: 60px;
     padding-right: 60px;
     object-fit: cover;
+
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 5;
   }
 }
 

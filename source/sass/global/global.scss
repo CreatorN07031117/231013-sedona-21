@@ -14,3 +14,47 @@
 body {
   margin: 0;
 }
+
+/*Видимость <br> на разных разрешениях*/
+
+@media (min-width: $tablet-width) {
+  .visually-mobile {
+    display: none;
+  }
+}
+
+.visually-tablet {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .visually-tablet {
+    display: inline;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .visually-tablet {
+    display: none;
+  }
+}
+
+.visually-desktop {
+  display: none;
+}
+
+@media (min-width: $desktop-width) {
+  .visually-desktop {
+    display: inline;
+  }
+}
+
+.visually-tablet-and-desktop {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .visually-tablet-and-desktop {
+    display: inline;
+  }
+}
