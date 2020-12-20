@@ -1,16 +1,27 @@
 .footer-copyright {
+  height: 40px;
+
   text-align: center;
   vertical-align: middle;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @media (min-width: $tablet-width) {
   .footer-copyright {
+    padding-top: 5px;
+    padding-left: 5px;
+
     grid-column-start: 3;
     grid-column-end: 4;
   }
 }
 
 .footer-copyright__text {
+  padding-right: 12px;
+
   font-family: $font;
   font-size: 14px;
   line-height: 26px;
@@ -21,11 +32,29 @@
 
 @media (min-width: $tablet-width) {
   .footer-copyright__text {
-    padding-left: 68px;
-    padding-right: 28px;
+    padding-left: 26px;
+    padding-right: 12px;
   }
 }
 
-.footer-copyright__logo {
-  visibility: hidden;
+@media (min-width: $desktop-width) {
+  .footer-copyright__text {
+    padding-left: 53px;
+  }
+}
+
+.copyright__htmlacademy-logo {
+  width: 28px;
+  height: 37px;
+
+  fill: $black;
+
+  &:hover {
+    fill: $blue;
+  }
+
+  &:active {
+    fill: $black;
+    fill-opacity: 0.3;
+  }
 }

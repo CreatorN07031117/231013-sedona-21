@@ -7,10 +7,10 @@
 
 @media (min-width: $tablet-width) {
   .feedback-preview__wrapper {
-    padding-top: 64px;
-    padding-bottom: 89px;
-    padding-left: 145px;
-    padding-right: 145px;
+    padding-top: 62px;
+    padding-bottom: 87px;
+    padding-left: 165px;
+    padding-right: 165px;
   }
 }
 
@@ -18,8 +18,8 @@
   .feedback-preview__wrapper {
     padding-top: 113px;
     padding-bottom: 57px;
-    padding-left: 360px;
-    padding-right: 360px;
+    padding-left: 380px;
+    padding-right: 380px;
   }
 }
 
@@ -39,7 +39,7 @@
 .feedback-preview__header {
   margin: 0;
   padding: 0;
-  padding-bottom: 26px;
+  padding-bottom: 29px;
 
   font-family: $fontbold;
   font-size: 18px;
@@ -54,9 +54,17 @@
 
 @media (min-width: $tablet-width) {
   .feedback-preview__header {
+    padding-bottom: 32px;
+
     font-family: $fontbold;
     font-size: 30px;
     line-height: 26px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .feedback-preview__header {
+    padding-bottom: 34px;
   }
 }
 

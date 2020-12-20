@@ -1,5 +1,5 @@
 .feedback-attractions__wrapper {
-  padding-top: 16px;
+  padding-top: 13px;
   padding-bottom: 2px;
   padding-left: 20px;
   padding-right: 20px;
@@ -10,11 +10,12 @@
 
 @media (min-width: $tablet-width) {
   .feedback-attractions__wrapper {
-    width: 507px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 60px;
+    margin-right: 60px;
     padding-top: 0;
-    padding-bottom: 39px;
+    padding-bottom: 34px;
+    padding-left: 0;
+    padding-right: 0;
 
     grid-template-columns: 50% 50%;
     grid-template-rows: auto auto auto;
@@ -23,13 +24,12 @@
 
 @media (min-width: $desktop-width) {
   .feedback-attractions__wrapper {
-    width: 957px;
+    margin-left: 120px;
+    margin-right: 120px;
     padding-top: 16px;
-    padding-bottom: 47px;
-    padding-left: 0;
-    padding-right: 0;
+    padding-bottom: 34px;
 
-    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-columns: 259px 259px 238px auto;
     grid-template-rows: auto auto;
   }
 }
@@ -50,10 +50,12 @@
   }
 }
 
+/*Стили лейблов*/
+
 .feedback-attractions__label {
   width: 226px;
   height: 58px;
-  padding-bottom: 20px;
+  padding-bottom: 22px;
 
   display: flex;
   align-items: center;
@@ -61,19 +63,28 @@
 
 @media (min-width: $tablet-width) {
   .feedback-attractions__label {
-    padding-left: 24px;
+    padding-left: 32px;
     padding-bottom: 32px;
+  }
+}
+
+@media (min-width: $tablet-width) and (max-width: 1199px) {
+  .feedback-attractions__label:nth-child(even) {
+    padding-left: 96px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .feedback-attractions__label {
+    width: inherit;
+    padding-left: 0;
+
     grid-row-start: 2;
     grid-row-end: 3;
   }
 }
 
-/*Подписи к форме*/
+/*Заголовок блока*/
 
 .feedback-attractions__header {
   width: 240px;
@@ -81,7 +92,7 @@
   margin-left: auto;
   margin-right: auto;
   padding: 0;
-  padding-bottom: 20px;
+  padding-bottom: 21px;
 
   font-family: $fontbold;
   font-size: 18px;
@@ -96,10 +107,8 @@
 
 @media (min-width: $tablet-width) {
   .feedback-attractions__header {
-    width: 307px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-bottom: 41px;
+    width: 100%;
+    padding-bottom: 43px;
 
     font-family: $fontbold;
     font-size: 21px;
@@ -110,15 +119,14 @@
     grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 2;
+
+    position: relative;
   }
 }
 
 @media (min-width: $desktop-width) {
   .feedback-attractions__header {
-    width: 308px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-bottom: 42px;
+    padding-bottom: 44px;
 
     grid-column-start: 1;
     grid-column-end: 5;
@@ -127,8 +135,56 @@
   }
 }
 
+/*Декоративные линии около заголовка*/
+
+@media (min-width: $tablet-width) {
+  .feedback-attractions__header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 19%;
+    height: 26px;
+    border-bottom: 1px solid #dbdbdb;
+  }
+
+  .feedback-attractions__header::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 19%;
+    height: 26px;
+    border-bottom: 1px solid #dbdbdb;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .feedback-attractions__header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 29.167%;
+    height: 27px;
+    border-bottom: 1px solid #e5e5e5;
+  }
+
+  .feedback-attractions__header::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 29.167%;
+    height: 27px;
+    border-bottom: 1px solid #e5e5e5;
+  }
+}
+
+/*Подписи к чек-боксам*/
+
 .feedback-attractions__caption {
-  padding-left: 23px;
+  padding-left: 78px;
 
   font-family: $fontbold;
   font-size: 18px;
@@ -137,4 +193,60 @@
   font-weight: bold;
   vertical-align: middle;
   text-transform: none;
+}
+
+/*Стили для чекбоксов*/
+
+.feedback-attractions__checkbox:checked,
+.feedback-attractions__checkbox:not(:checked) {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.feedback-attractions__checkbox:checked + .feedback-attractions__caption,
+.feedback-attractions__checkbox:not(:checked) + .feedback-attractions__caption {
+  position: relative;
+}
+
+.feedback-attractions__checkbox:checked + .feedback-attractions__caption::before,
+.feedback-attractions__checkbox:not(:checked) + .feedback-attractions__caption::before {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  top: -15px;
+  left: -1px;
+  height: 56px;
+  width: 56px;
+  background-color: $covergrey;
+  border-radius: 10%;
+}
+
+@media (min-width: $desktop-width) {
+  .feedback-attractions__checkbox:checked + .feedback-attractions__caption::before,
+  .feedback-attractions__checkbox:not(:checked) + .feedback-attractions__caption::before {
+    border-radius: 0%;
+  }
+}
+
+.feedback-attractions__checkbox:checked + .feedback-attractions__caption::after {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  top: 5px;
+  left: 16px;
+  height: 16.23px;
+  width: 23.13px;
+  background: url("../img/tick.svg");
+  background-position: 0 0;
+}
+
+.feedback-attractions__label:nth-child(4) .feedback-attractions__checkbox:checked + .feedback-attractions__caption::after {
+  content: "";
+  top: 4px;
+  left: 16px;
 }

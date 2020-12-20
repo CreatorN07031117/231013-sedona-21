@@ -1,6 +1,6 @@
 .feedback-usertext__wrapper {
-  padding-top: 15px;
-  padding-bottom: 25px;
+  padding-top: 20px;
+  padding-bottom: 24px;
   padding-left: 20px;
   padding-right: 20px;
 
@@ -32,7 +32,7 @@
 .feedback-usertext__header {
   margin: 0;
   padding: 0;
-  padding-bottom: 19px;
+  padding-bottom: 15px;
 
   font-family: $fontbold;
   font-size: 18px;
@@ -41,18 +41,66 @@
   font-weight: bold;
   text-align: center;
   vertical-align: middle;
+
+  position: relative;
 }
 
 @media (min-width: $tablet-width) {
   .feedback-usertext__header {
     margin: 0;
     padding: 0;
-    padding-bottom: 54px;
+    padding-bottom: 57px;
 
     font-family: $fontbold;
     font-size: 21px;
     line-height: 26px;
     color: $black;
+  }
+}
+
+/*Декоративные линии около заголовка*/
+
+@media (min-width: $tablet-width) {
+  .feedback-usertext__header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 19.23%;
+    height: 12px;
+    border-bottom: 1px solid #dbdbdb;
+  }
+
+  .feedback-usertext__header::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 19.23%;
+    height: 12px;
+    border-bottom: 1px solid #dbdbdb;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .feedback-usertext__header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 29.167%;
+    height: 12px;
+    border-bottom: 1px solid #e5e5e5;
+  }
+
+  .feedback-usertext__header::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 29.167%;
+    height: 12px;
+    border-bottom: 1px solid #e5e5e5;
   }
 }
 
@@ -62,7 +110,7 @@
   resize: inherit;
 
   min-width: 240px;
-  height: 160px;
+  height: 120px;
   padding-top: 13px;
   padding-bottom: 29px;
   padding-left: 20px;
@@ -82,4 +130,11 @@
 
 .feedback-usertext__field::placeholder {
   color: $black;
+}
+
+@media (min-width: $tablet-width) {
+  .feedback-usertext__field {
+    padding-top: 17px;
+    padding-bottom: 23px;
+  }
 }

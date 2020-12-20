@@ -16,8 +16,8 @@
 @media (min-width: $tablet-width) {
   .footer__wrapper {
     height: 52px;
-    padding-top: 36px;
-    padding-bottom: 36px;
+    padding-top: 35px;
+    padding-bottom: 34px;
     padding-left: 32px;
 
     display: grid;
@@ -29,5 +29,7 @@
 @media (min-width: $desktop-width) {
   .footer__wrapper {
     width: ($desktop-width - 20px - 32px);
+    box-shadow: 10px 0 15px 0 rgba(134, 134, 143, 0.22),
+      -10px 0 15px 0 rgba(134, 134, 134, 0.22);
   }
 }

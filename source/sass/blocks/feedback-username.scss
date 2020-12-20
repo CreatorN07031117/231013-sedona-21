@@ -1,5 +1,5 @@
 .feedback-username__wrapper {
-  padding-top: 20px;
+  padding-top: 21px;
   padding-bottom: 5px;
   padding-left: 20px;
   padding-right: 20px;
@@ -12,7 +12,7 @@
 @media (min-width: $tablet-width) {
   .feedback-username__wrapper {
     padding-top: 0;
-    padding-bottom: 73px;
+    padding-bottom: 0;
     padding-left: 58px;
     padding-right: 60px;
 
@@ -25,14 +25,13 @@
 
 @media (min-width: $desktop-width) {
   .feedback-username__wrapper {
-    padding-bottom: 71px;
     padding-left: 79px;
     padding-right: 120px;
   }
 }
 
 .feedback-username {
-  border-bottom: 1px solid #e5e5e5;
+  border-bottom: 1px solid #dbdbdb;
 }
 
 @media (min-width: $tablet-width) {
@@ -49,10 +48,16 @@
   display: flex;
 }
 
+@media (min-width: $tablet-width) {
+  .feedback-username__label:last-child {
+    padding-bottom: 0;
+  }
+}
+
 .feedback-username__field {
   width: 100%;
-  padding-top: 18px;
-  padding-bottom: 14px;
+  padding-top: 15px;
+  padding-bottom: 13px;
   padding-left: 22px;
 
   background-color: $covergrey;
@@ -74,7 +79,7 @@
 .feedback-username__header {
   margin: 0;
   padding: 0;
-  padding-bottom: 20px;
+  padding-bottom: 19px;
 
   font-family: $fontbold;
   font-size: 18px;
@@ -92,10 +97,7 @@
     font-family: $fontbold;
     font-size: 21px;
     line-height: 26px;
-    color: $black;
-    font-weight: bold;
-    text-align: center;
-    vertical-align: middle;
+    text-align: left;
   }
 }
 
@@ -106,9 +108,9 @@
 }
 
 .feedback-username__caption {
-  padding-top: 18px;
-  padding-bottom: 14px;
-  padding-right: 13px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-right: 14px;
 
   font-family: $font;
   font-size: 14px;
@@ -117,4 +119,34 @@
   vertical-align: middle;
 
   display: block;
+}
+
+.feedback-username__label--last-name .feedback-username__caption {
+  padding-top: 18px;
+  padding-right: 15px;
+}
+
+.feedback-username__label--middle-name .feedback-username__caption {
+  padding-top: 18px;
+  padding-bottom: 13px;
+  padding-right: 16px;
+}
+
+@media (min-width: $tablet-width) {
+  .feedback-username__caption {
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-right: 14px;
+  }
+
+  .feedback-username__label--last-name .feedback-username__caption {
+    padding-top: 14px;
+    padding-right: 15px;
+  }
+
+  .feedback-username__label--middle-name .feedback-username__caption {
+    padding-top: 19px;
+    padding-bottom: 13px;
+    padding-right: 16px;
+  }
 }

@@ -1,4 +1,8 @@
 .hashtag__text {
+  padding-right: 5px;
+
+  display: block;
+
   font-family: $fontbold;
   font-size: 21px;
   line-height: 26px;
@@ -8,9 +12,16 @@
 
 @media (min-width: $tablet-width) {
   .hashtag__text {
-    padding-top: 13px;
-    padding-bottom: 9px;
-    padding-left: 28px;
-    padding-right: 28px;
+    padding-top: 12px;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 43px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .hashtag__text {
+    padding-left: 0;
+    padding-right: 66px;
   }
 }

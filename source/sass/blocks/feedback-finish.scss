@@ -1,6 +1,6 @@
 .feedback-finish__wrapper {
   padding-top: 25px;
-  padding-bottom: 48px;
+  padding-bottom: 37px;
   padding-left: 20px;
   padding-right: 20px;
 }
@@ -8,12 +8,11 @@
 @media (min-width: $tablet-width) {
   .feedback-finish__wrapper {
     padding-top: 29px;
-    padding-bottom: 40px;
+    padding-bottom: 62px;
     padding-left: 60px;
     padding-right: 60px;
 
     display: flex;
-    justify-content: space-between;
     align-items: center;
 
     grid-column-start: 1;
@@ -29,10 +28,14 @@
   }
 }
 
+/*Стили кнопок*/
+
 .feedback-finish__button {
   width: 100%;
   padding-top: 18px;
-  padding-bottom: 14px;
+  padding-bottom: 15px;
+  padding-left: 0;
+  padding-right: 0;
 
   background-color: $blue;
   border: none;
@@ -50,23 +53,41 @@
 @media (min-width: $tablet-width) {
   .feedback-finish__button {
     width: 100%;
+    margin-right: auto;
     padding-top: 18px;
     padding-bottom: 14px;
+    padding-left: 66px;
+    padding-right: 76px;
+
+    text-align: center;
+
+    display: block;
+    align-self: flex-start;
+    flex-basis: 50%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .feedback-finish__button {
+    padding-left: 78px;
+    padding-right: 76px;
   }
 }
 
 .feedback-finish__required {
-  visibility: none;
+  display: none;
 }
 
 @media (min-width: $tablet-width) {
   .feedback-finish__required {
-    width: 100%;
+    padding-top: 5px;
 
+    font-size: 14px;
     text-align: right;
     color: $darkbrown;
 
     visibility: visible;
     display: block;
+    vertical-align: middle;
   }
 }

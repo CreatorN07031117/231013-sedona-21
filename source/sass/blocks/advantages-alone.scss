@@ -9,7 +9,7 @@
 @media (min-width: $tablet-width) {
   .advantages-alone__wrapper {
     display: grid;
-    grid-template-columns: 33% 34% 33%;
+    grid-template-columns: 33.333% 33.334% 33.333%;
     grid-template-rows: auto;
   }
 }
@@ -17,7 +17,7 @@
 /*Стили блока с контентом*/
 
 .advantages-alone__content {
-  padding-top: 49px;
+  padding-top: 51px;
   padding-left: 13px;
   padding-right: 12px;
 }
@@ -25,16 +25,16 @@
 @media (min-width: $tablet-width) {
   .advantages-alone__content {
     padding-top: 39px;
-    padding-left: 13px;
-    padding-right: 12px;
+    padding-left: 17px;
+    padding-right: 17px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .advantages-alone__content {
     padding-top: 47px;
-    padding-left: 53px;
-    padding-right: 53px;
+    padding-left: 60px;
+    padding-right: 60px;
 
     grid-column-start: 1;
     grid-column-end: 2;
@@ -42,14 +42,25 @@
 }
 
 .advantages-alone__content--devil-bridge {
+  padding-top: 39px;
+
   grid-column-start: 1;
   grid-column-end: 2;
 }
 
 @media (min-width: $tablet-width) {
   .advantages-alone__content--devil-bridge {
+    padding-top: 42px;
+
     grid-column-start: 3;
     grid-column-end: 4;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advantages-alone__content--devil-bridge {
+    padding-top: 50px;
+    padding-left: 61px;
   }
 }
 
@@ -76,17 +87,28 @@
   vertical-align: middle;
 }
 
+.advantages-alone__content--devil-bridge .advantages-alone__header {
+  padding-bottom: 12px;
+}
+
 @media (min-width: $tablet-width) {
   .advantages-alone__header {
-    padding-bottom: 10px;
+    padding-bottom: 15px;
     padding-left: 35px;
     padding-right: 35px;
 
     font-family: $fontbold;
-    font-size: 26px;
+    font-size: 21px;
     line-height: 26px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .advantages-alone__header {
+    padding-bottom: 15px;
+  }
+}
+
 
 .advantages-alone__number {
   font-family: $font;
@@ -102,7 +124,7 @@
 .advantages-alone__text {
   margin: 0;
   padding: 0;
-  padding-top: 15px;
+  padding-top: 19px;
   padding-bottom: 39px;
 
   font-family: $font;
@@ -115,17 +137,31 @@
   display: block;
 }
 
+.advantages-alone__content--devil-bridge .advantages-alone__text {
+  margin: 0;
+  padding: 0;
+  padding-top: 17px;
+  padding-bottom: 36px;
+}
+
 @media (min-width: $tablet-width) {
   .advantages-alone__text {
-    padding-top: 26px;
-    padding-bottom: 43px;
+    padding-top: 23px;
+    padding-bottom: 40px;
+  }
+
+  .advantages-alone__content--devil-bridge .advantages-alone__text {
+    padding-top: 25px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .advantages-alone__text {
     padding-top: 23px;
-    padding-bottom: 56px;
+    padding-bottom: 40px;
+
+    font-size: 14px;
+    line-height: 21px;
   }
 }
 
@@ -166,4 +202,36 @@
   width: 100%;
   height: 260px;
   object-fit: cover;
+}
+
+@media (min-width: $tablet-width) {
+  .advantages-img__img {
+    width: 100%;
+    height: 256px;
+    object-fit: cover;
+  }
+}
+
+/*Треугольник на мобилке*/
+.advantages-alone__content--real-town {
+  position: relative;
+}
+
+@media (max-width: 767px) {
+  .advantages-alone__content--real-town::before {
+    content: "";
+    position: absolute;
+    z-index: 2;
+    top: -21px;
+    left: 0;
+    width: 100%;
+    min-width: 200px;
+    max-width: $tablet-width;
+    height: 37px;
+
+    background: url("../img/intro-triangle-bottom.svg") no-repeat;
+
+    background-size: 100% 37px;
+    background-position: top;
+  }
 }
