@@ -48,6 +48,17 @@
   text-align: center;
   vertical-align: middle;
   text-transform: uppercase;
+
+  cursor: pointer;
+
+  &:hover {
+    background-color: $blue-hover;
+  }
+
+  &:active {
+    background-color: $blue-down;
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 @media (min-width: $tablet-width) {
