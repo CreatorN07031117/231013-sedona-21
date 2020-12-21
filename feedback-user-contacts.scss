@@ -1,0 +1,314 @@
+.feedback-user-contacts__wrapper {
+  padding-top: 20px;
+  padding-bottom: 14px;
+
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto;
+}
+
+@media (min-width: $tablet-width) {
+  .feedback-user-contacts__wrapper {
+    padding-top: 70px;
+    padding-bottom: 26px;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .feedback-user-contacts__wrapper {
+    padding-top: 68px;
+    padding-bottom: 34px;
+    padding-left: 118px;
+    padding-right: 118px;
+
+    grid-template-columns: 49.9% 50.1%;
+  }
+}
+
+.feedback-user-contacts {
+  border-bottom: 1px solid  #dbdbdb;
+}
+
+@media (min-width: $tablet-width) {
+  .feedback-user-contacts {
+    border-bottom: none;
+
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+}
+
+/*Стили лейблов*/
+
+.feedback-user-contacts__label {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 13px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: $tablet-width) {
+  .feedback-user-contacts__label {
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 25px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .feedback-user-contacts__label {
+    padding-bottom: 0;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+}
+
+/*Стили полей*/
+
+.feedback-user-contacts__field {
+  padding-top: 19px;
+  padding-bottom: 15px;
+  padding-left: 22px;
+
+  background-color: $covergrey;
+  border: none;
+
+  font-family: $fontbold;
+  font-size: 18px;
+  line-height: 26px;
+  color: $black;
+  vertical-align: middle;
+
+  position: relative;
+}
+
+@media (min-width: $tablet-width) {
+  .feedback-user-contacts__field {
+    padding-top: 18px;
+    padding-bottom: 15px;
+  }
+}
+
+.feedback-user-contacts__field--email {
+  padding-top: 17px;
+  padding-bottom: 16px;
+}
+
+@media (min-width: $desktop-width) {
+  .feedback-user-contacts__field {
+    width: 234px;
+  }
+}
+
+.feedback-user-contacts__field::placeholder {
+  color: $black;
+}
+
+/*Заголовок блока*/
+
+.feedback-user-contacts__header {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 17px;
+
+  font-family: $fontbold;
+  font-size: 18px;
+  line-height: 26px;
+  color: $black;
+  font-weight: bold;
+  text-align: center;
+  vertical-align: middle;
+}
+
+@media (min-width: $tablet-width) {
+  .feedback-user-contacts__header {
+    padding-bottom: 21px;
+
+    font-family: $fontbold;
+    font-size: 21px;
+    line-height: 26px;
+    position: relative;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .feedback-user-contacts__header {
+    padding-bottom: 73px;
+    padding-right: 5px;
+
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+}
+
+/*Декоративные линии около заголовка*/
+
+@media (min-width: $tablet-width) {
+  .feedback-user-contacts__header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 19%;
+    height: 11px;
+    border-bottom: 1px solid #dbdbdb;
+  }
+
+  .feedback-user-contacts__header::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 19%;
+    height: 11px;
+    border-bottom: 1px solid #dbdbdb;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .feedback-user-contacts__header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 29.167%;
+    height: 11px;
+    border-bottom: 1px solid #dbdbdb;
+  }
+
+  .feedback-user-contacts__header::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 29.167%;
+    height: 11px;
+    border-bottom: 1px solid #dbdbdb;
+  }
+}
+
+/*Подписи к форме*/
+
+.feedback-user-contacts__caption {
+  padding-left: 22px;
+  padding-bottom: 7px;
+
+  font-family: $font;
+  font-size: 14px;
+  line-height: 26px;
+  color: $darkbrown;
+  vertical-align: middle;
+}
+
+.feedback-user-contacts__label--user-email .feedback-user-contacts__caption {
+  padding-left: 21px;
+}
+
+@media (min-width: $tablet-width) {
+  .feedback-user-contacts__caption {
+    padding-bottom: 9px;
+  }
+
+  .feedback-user-contacts__label--user-email .feedback-user-contacts__caption {
+    padding-bottom: 5px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .feedback-user-contacts__caption {
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 17px;
+  }
+
+  .feedback-user-contacts__label--user-email .feedback-user-contacts__caption {
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 18px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .feedback-user-contacts__caption--extend {
+    display: none;
+  }
+}
+
+/*Иконки на полях*/
+
+.feedback-user-contacts__label--user-phone {
+  position: relative;
+}
+
+.feedback-user-contacts__label--user-phone::after {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  top: 33px;
+  right: 20px;
+  width: 58px;
+  height: 58px;
+  background-color: #e6e6e6;
+  background-image: url("../img/phone.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@media (min-width: $tablet-width) {
+  .feedback-user-contacts__label--user-phone::after {
+    top: 35px;
+    right: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .feedback-user-contacts__label--user-phone::after {
+    top: 0;
+    right: 80px;
+  }
+}
+
+.feedback-user-contacts__label--user-email {
+  position: relative;
+}
+
+.feedback-user-contacts__label--user-email::after {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  top: 34px;
+  right: 20px;
+  width: 58px;
+  height: 58px;
+  background-color: #e6e6e6;
+  background-image: url("../img/mail.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@media (min-width: $tablet-width) {
+  .feedback-user-contacts__label--user-email::after {
+    top: 31px;
+    right: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .feedback-user-contacts__label--user-email::after {
+    top: 0;
+    right: 4px;
+  }
+}
