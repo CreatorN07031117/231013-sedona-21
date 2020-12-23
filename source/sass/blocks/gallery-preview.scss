@@ -1,12 +1,14 @@
 .gallery-preview__wrapper {
   padding-top: 32px;
-  padding-bottom: 32px;
+  padding-bottom: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 @media (min-width: $tablet-width) {
   .gallery-preview__wrapper {
-    padding-top: 65px;
-    padding-bottom: 74px;
+    padding-top: 63px;
+    padding-bottom: 76px;
     padding-left: 60px;
     padding-right: 60px;
 
@@ -17,10 +19,10 @@
 
 @media (min-width: $desktop-width) {
   .gallery-preview__wrapper {
-    padding-top: 65px;
-    padding-bottom: 74px;
-    padding-left: 60px;
-    padding-right: 60px;
+    padding-top: 97px;
+    padding-bottom: 79px;
+    padding-left: 378px;
+    padding-right: 378px;
 
     grid-column-start: 1;
     grid-column-end: 4;
@@ -48,7 +50,7 @@
 @media (min-width: $tablet-width) {
   .gallery-preview__header {
     margin: 0;
-    padding-bottom: 26px;
+    padding-bottom: 34px;
 
     font-family: $fontbold;
     font-size: 30px;

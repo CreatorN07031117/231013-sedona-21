@@ -11,8 +11,8 @@
 @media (min-width: $tablet-width) {
   .video-presentation__wrapper {
     width: 100%;
-    padding-top: 53px;
-    padding-bottom: 49px;
+    padding-top: 57px;
+    padding-bottom: 41px;
 
     display: grid;
     grid-template-columns: 113px auto 63px 113px;
@@ -23,11 +23,11 @@
 @media (min-width: $desktop-width) {
   .video-presentation__wrapper {
     width: 100%;
-    padding-top: 53px;
+    padding-top: 60px;
     padding-bottom: 85px;
 
     display: grid;
-    grid-template-columns: 263px auto 63px 113px;
+    grid-template-columns: 263px auto 63px 263px;
     grid-template-rows: auto auto auto 93px;
   }
 }
@@ -57,12 +57,19 @@
 
 @media (min-width: $tablet-width) {
   .video-presentation__header {
-    padding-bottom: 30px;
+    padding-bottom: 35px;
 
     font-family: $fontbold;
     font-size: 30px;
     line-height: 26px;
 
+    grid-column-start: 1;
+    grid-column-end: 5;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .video-presentation__header {
     grid-column-start: 1;
     grid-column-end: 5;
   }
@@ -90,7 +97,7 @@
     margin: 0;
     padding-left: 155px;
     padding-right: 155px;
-    padding-bottom: 80px;
+    padding-bottom: 79px;
 
     grid-column-start: 1;
     grid-column-end: 5;
@@ -99,9 +106,9 @@
 
 @media (min-width: $desktop-width) {
   .video-presentation_text {
-    padding-left: 374px;
-    padding-right: 374px;
-    padding-bottom: 68px;
+    padding-left: 370px;
+    padding-right: 370px;
+    padding-bottom: 76px;
   }
 }
 
@@ -121,8 +128,8 @@
 @media (min-width: $tablet-width) {
   .video-presentation__preview {
     height: 500px;
-    padding-left: 60px;
-    padding-right: 60px;
+    padding-left: 62px;
+    padding-right: 58px;
     object-fit: cover;
 
     grid-column-start: 1;
@@ -134,8 +141,13 @@
 
 @media (min-width: $desktop-width) {
   .video-presentation__preview {
-    padding-left: 200px;
-    padding-right: 200px;
+    padding-left: 199px;
+    padding-right: 202px;
+
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 5;
   }
 }
 
@@ -155,22 +167,30 @@
 }
 
 .video-presentation__scroll-bar {
-  height: 45px;
+  height: 23px;
   margin-left: 20px;
   margin-right: 20px;
+  padding-top: 22px;
+  padding-left: 22px;
+  padding-right: 22px;
   background-color: rgba(0, 0, 0, 0.3);
 
   grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: 4;
   grid-row-end: 5;
+
+  position: relative;
 }
 
 @media (min-width: $tablet-width) {
   .video-presentation__scroll-bar {
-    height: 100%;
-    margin-left: 20px;
+    height: 40px;
+    margin-left: 0;
     margin-right: 0;
+    padding-top: 45px;
+    padding-left: 45px;
+    padding-right: 47px;
     background-color: transparent;
 
     grid-column-start: 2;
@@ -180,10 +200,67 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .video-presentation__scroll-bar {
+    padding-top: 46px;
+    padding-left: 29px;
+    padding-right: 43px;
+
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
+  }
+}
+
+.video-presentation__scale {
+  width: 100%;
+  height: 3px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+@media (min-width: $desktop-width) {
+  .video-presentation__scale {
+    height: 3px;
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+.video-presentation__video-toggle::after {
+  content: "";
+  position: absolute;
+  top: 17px;
+  left: 55px;
+  width: 11px;
+  height: 11px;
+  background: url("../img/volume-slider.svg");
+  background-position: center;
+  background-size: cover;
+}
+
+@media (min-width: $tablet-width) {
+  .video-presentation__video-toggle::after {
+    top: 40px;
+    left: 154px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .video-presentation__video-toggle::after {
+    top: 41px;
+    left: 140px;
+  }
+}
+
+/*Стили для панели управления видео*/
+
 .video-presentation__buttons-panel {
-  height: 66px;
+  height: 43px;
   margin-left: 20px;
   margin-right: 20px;
+  padding-top: 23px;
+  padding-left: 24px;
+  padding-right: 24px;
 
   background-color: $covergrey;
 
@@ -198,9 +275,12 @@
 
 @media (min-width: $tablet-width) {
   .video-presentation__buttons-panel {
-    height: 100%;
-    margin-left: 60px;
-    margin-right: 60px;
+    height: 58px;
+    margin-left: 62px;
+    margin-right: 58px;
+    padding-top: 35px;
+    padding-left: 34px;
+    padding-right: 40px;
 
     background-color: rgba(0, 0, 0, 0.3);
 
@@ -216,10 +296,12 @@
 
 @media (min-width: $desktop-width) {
   .video-presentation__buttons-panel {
-    margin-left: 200px;
-    margin-right: 200px;
+    margin-left: 199px;
+    margin-right: 202px;
   }
 }
+
+/*Стили кнопок управления*/
 
 .video-presentation__start-over {
   margin-right: auto;
@@ -230,6 +312,43 @@
   padding: 0;
 
   border: none;
+  background-color: transparent;
+
+  font-size: 0;
+}
+
+.video-presentation__start-over-icon {
+  fill: #5c6870;
+  cursor: pointer;
+
+  &:hover {
+    fill: #333333;
+  }
+
+  &:active {
+    fill: #333333;
+    opacity: 0.3;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .video-presentation__start-over-icon {
+    fill: $white;
+
+    &:hover {
+      fill: $white;
+      opacity: 0.6;
+    }
+
+    &:active {
+      fill: $white;
+      opacity: 0.3;
+    }
+  }
+}
+
+.video-presentation__closed-captions {
+  padding-right: 31px;
 }
 
 .video-presentation__closed-captions-button {
@@ -237,6 +356,40 @@
   padding: 0;
 
   border: none;
+  background-color: transparent;
+
+  font-size: 0;
+  color: transparent;
+}
+
+.video-presentation__closed-captions-icon {
+  fill: #5c6870;
+  cursor: pointer;
+
+  &:hover {
+    fill: #333333;
+  }
+
+  &:active {
+    fill: #333333;
+    opacity: 0.3;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .video-presentation__closed-captions-icon {
+    fill: $white;
+
+    &:hover {
+      fill: $white;
+      opacity: 0.6;
+    }
+
+    &:active {
+      fill: $white;
+      opacity: 0.3;
+    }
+  }
 }
 
 .video-presentation__full-screen-button {
@@ -244,4 +397,37 @@
   padding: 0;
 
   border: none;
+  background-color: transparent;
+
+  font-size: 0;
+}
+
+.video-presentation__full-screen-icon {
+  fill: #5c6870;
+  cursor: pointer;
+
+  &:hover {
+    fill: #333333;
+  }
+
+  &:active {
+    fill: #333333;
+    opacity: 0.3;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .video-presentation__full-screen-icon {
+    fill: $white;
+
+    &:hover {
+      fill: $white;
+      opacity: 0.6;
+    }
+
+    &:active {
+      fill: $white;
+      opacity: 0.3;
+    }
+  }
 }
