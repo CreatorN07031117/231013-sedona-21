@@ -1,15 +1,12 @@
 .fotogallery__wrapper {
-  padding-left: 20px;
-  padding-right: 20px;
-
   display: grid;
   grid-template-columns: auto;
 }
 
 @media (min-width: $tablet-width) {
   .fotogallery__wrapper {
-    padding-left: 60px;
-    padding-right: 60px;
+    padding-left: 62px;
+    padding-right: 58px;
 
     grid-template-columns: 50% 50%;
     grid-template-rows: auto auto auto auto auto;
@@ -34,8 +31,10 @@
 
 .fotogallery__block {
   margin: 0;
-  padding-top: 23px;
+  padding-top: 22px;
   padding-bottom: 16px;
+  padding-left: 20px;
+  padding-right: 20px;
 
   border-bottom: 1px solid #e5e5e5;
 
@@ -49,6 +48,8 @@
     margin: 0;
     padding-top: 0;
     padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
 
     border-bottom: none;
   }
@@ -74,7 +75,7 @@
 /*Фото в галереи*/
 
 .fotogallery__full-size-img {
-  background-color: #feeaa7;
+  background-color: #e9a057;
   font-size: 0;
   line-height: 0;
   display: block;
@@ -131,7 +132,7 @@
 @media (min-width: $tablet-width) {
   .fotogallery__caption {
     padding-top: 16px;
-    padding-bottom: 15px;
+    padding-bottom: 16px;
     padding-left: 20px;
     padding-right: 20px;
 
@@ -140,14 +141,22 @@
     flex-direction: row;
     justify-content: space-between;
   }
+
+  .fotogallery__block:nth-child(even) .fotogallery__caption {
+    background-color: #eaeaea;
+  }
+
+  .fotogallery__block:first-child .fotogallery__caption {
+    background-color: $covergrey;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .fotogallery__caption {
     padding-top: 16px;
-    padding-bottom: 15px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-bottom: 17px;
+    padding-left: 21px;
+    padding-right: 17px;
 
     background-color: rgba(0, 0, 0, 0.3);
 
@@ -158,6 +167,22 @@
     grid-row-end: 3;
     grid-column-start: 1;
     grid-column-end: 2;
+  }
+
+  .fotogallery__block:nth-child(even) .fotogallery__caption {
+    background-color: rgba(0, 0, 0, 0.3);
+    padding-left: 23px;
+    padding-right: 25px;
+  }
+
+  .fotogallery__block:nth-child(2) .fotogallery__caption {
+    padding-left: 20px;
+    padding-right: 22px;
+  }
+
+  .fotogallery__block:nth-child(5) .fotogallery__caption {
+    padding-left: 0;
+    padding-right: 21px;
   }
 }
 
@@ -210,19 +235,44 @@
 /*Блок «Мне нравится»*/
 
 .fotogallery__likebox {
+  padding-top: 8px;
+
   display: flex;
   align-items: center;
 }
 
+@media (min-width: $tablet-width) {
+  .fotogallery__likebox {
+    padding-top: 0;
+  }
+}
+
 .fotogallery__likebutton {
-  width: 37px;
+  width: 23px;
   margin: 0;
   padding: 0;
 
-  visibility: hidden;
+  font-size: 0;
+  border: none;
+  background: transparent;
+}
+
+.fotogallery__likeicon {
+  fill: $black;
+  opacity: 0.3;
+}
+
+@media (min-width: $desktop-width) {
+  .fotogallery__likeicon {
+    fill: $white;
+    opacity: 1;
+  }
 }
 
 .fotogallery__likestats {
+  padding-top: 5px;
+  padding-left: 13px;
+
   font-family: $fontbold;
   font-size: 14px;
   line-height: 24px;
@@ -231,8 +281,26 @@
   vertical-align: middle;
 }
 
+@media (min-width: $tablet-width) {
+  .fotogallery__likestats {
+    padding-left: 9px;
+    padding-right: 10px;
+  }
+
+  .fotogallery__block:nth-child(even) .fotogallery__likestats {
+    padding-left: 9px;
+    padding-right: 15px;
+  }
+
+  .fotogallery__block:nth-child(2) .fotogallery__likestats {
+    padding-left: 9px;
+    padding-right: 0;
+  }
+}
+
 @media (min-width: $desktop-width) {
   .fotogallery__likestats {
     color: $white;
+    padding-left: 11px;
   }
 }
