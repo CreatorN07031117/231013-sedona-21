@@ -214,7 +214,21 @@
 
 /*Треугольник на мобилке*/
 .advantages-alone__content--real-town {
+  padding-top: 70px;
+
   position: relative;
+}
+
+@media (min-width: $tablet-width) {
+  .advantages-alone__content--real-town {
+    padding-top: 39px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advantages-alone__content--real-town {
+    padding-top: 47px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -222,12 +236,13 @@
     content: "";
     position: absolute;
     z-index: 2;
-    top: -21px;
+    top: -2px;
     left: 0;
     width: 100%;
     min-width: 200px;
     max-width: $tablet-width;
     height: 37px;
+    border-top: 1px solid $white;
 
     background: url("../img/intro-triangle-bottom.svg") no-repeat;
 
