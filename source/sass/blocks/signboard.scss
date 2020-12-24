@@ -4,7 +4,9 @@
   height: 298px;
   padding-top: 90px;
 
-  display: grid;
+  display: flex;
+
+  justify-content: center;
 }
 
 @media (min-width: $tablet-width) {
@@ -16,14 +18,14 @@
 
 @media (min-width: $desktop-width) {
   .signboard__wrapper {
-    height: 435px;
-    padding-top: 82px;
+    height: 442px;
+    padding-top: 75px;
   }
 }
 
 .signboard {
   background-color: #e4f1f9;
-  background-image: url("../img/back-mobile.png");
+  background-image: url("../img/back-mobile.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -31,23 +33,57 @@
   position: relative;
 }
 
+@media (min-resolution: 2dppx) {
+  .signboard {
+    background-image: url("../img/back-mobile@2.jpg");
+  }
+}
+
 @media (min-width: $tablet-width) {
   .signboard {
-    background-image: url("../img/back-desktop.png");
+    background-image: url("../img/back-tablet.jpg");
     background-repeat: no-repeat;
     background-position: center;
   }
 }
 
+@media (min-width: $tablet-width) and (min-resolution: 2dppx) {
+  .signboard {
+    background-image: url("../img/back-tablet@2x.jpg");
+  }
+}
+
 @media (min-width: $desktop-width) {
   .signboard {
-    background-image: url("../img/back-desktop.png");
+    background-image: url("../img/back-desktop.jpg");
+  }
+}
+
+@media (min-width: $desktop-width) and (min-resolution: 2dppx) {
+  .signboard {
+    background-image: url("../img/back-desktop@2x.jpg");
   }
 }
 
 .signboard__index-img {
+  width: 282px;
+  height: 214px;
   margin-left: auto;
   margin-right: auto;
+}
+
+@media (min-width: $tablet-width) {
+  .signboard__index-img {
+    width: 461px;
+    height: 350px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .signboard__index-img {
+    width: 459.5px;
+    height: 350px;
+  }
 }
 
 /*Треугольники*/

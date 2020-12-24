@@ -26,12 +26,20 @@
         </ul>
       </nav>
         <a class="page-header__logo" href="/">
-          <img class="logo" src="img/logotype-mobile.svg" alt="City of Sedona">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logotype-tablet.svg">
+            <img class="logo" src="img/logotype-mobile.svg" alt="City of Sedona">
+          </picture>
         </a>
     </header>
     <main class="page-main">
       <div class="signboard signboard__wrapper">
-        <img class="signboard__index-img" src="img/text-index.png" alt="Welcome to Sedona">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/text-index.svg">
+          <source media="(min-width: 768px)" srcset="img/text-index.svg">
+          <img class="signboard__index-img" src="img/text-index.svg" alt="Welcome to Sedona" width="282" height="214">
+        </picture>
       </div>
       <h1 class="visually-hidden"></h1>
       <section class="intro intro__wrapper">
@@ -45,7 +53,11 @@
           <p class="advantages-alone__text">Седона не аттракцион для туристов, там течет своя<br class="visually-tablet"> жизнь</p>
         </div>
         <div class="advantages-img advantages-img__wrapper--real-town">
-          <img class="advantages-img__img  advantages-img__img--real-town" src="img/photo-city@1x_1.png" alt="Настоящий городок">
+          <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-city@1xdesk.jpg 1x, img/photo-city@1x@2xdesk.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-city@1xtab.jpg 1x, img/photo-city@1x@2xtab.jpg 2x">
+              <img class="advantages-img__img  advantages-img__img--real-town" src="img/photo-city@1x 1.jpg" srcset="img/photo-city@1x 1@2x.jpg" alt="Настоящий городок" width="100%" height="260px">
+          </picture>
         </div>
       </section>
       <section class="feature feature__wrapper">
@@ -69,7 +81,11 @@
           <p class="advantages-alone__text">Да, по нему можно<br class="visually-tablet"> пройти!<br class="visually-desktop"> Если вы<br class="visually-tablet"> осмелитесь, конечно</p>
         </div>
         <div class="advantages-img advantages-img__wrapper--devil-bridge">
-          <img class="advantages-img__img advantages-img__img--devil-bridge" src="img/photo-bridge@1x_1.png" alt="Настоящий городок" height="">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/photo-bridge@1xdesk.jpg 1x, img/photo-bridge@1x@2xdesk.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/photo-bridge@1xtab.jpg 1x, img/photo-bridge@1x@2xtab.jpg 2x">
+            <img class="advantages-img__img advantages-img__img--devil-bridge" src="img/photo-bridge@1x.jpg" srcset="img/photo-bridge@1x@2x.jpg" alt="Настоящий городок" width="100%" height="260px">
+          </picture>
         </div>
       </section>
       <section class="advantages advantages__wrapper">
