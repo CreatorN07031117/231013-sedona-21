@@ -166,6 +166,16 @@
   border-radius: 50%;
 }
 
+.feedback-feeling__radio:checked + .feedback-feeling__caption:hover::before,
+.feedback-feeling__radio:not(:checked) + .feedback-feeling__caption:hover::before {
+  background-color: $grey-hover;
+}
+
+.feedback-feeling__radio:checked + .feedback-feeling__caption:active::before,
+.feedback-feeling__radio:not(:checked) + .feedback-feeling__caption:active::before {
+  background-color: $grey-down;
+}
+
 @media (min-width: $desktop-width) {
   .feedback-feeling__radio:checked + .feedback-feeling__caption::before,
   .feedback-feeling__radio:not(:checked) + .feedback-feeling__caption::before {
@@ -184,6 +194,10 @@
   width: 21px;
   background-color: $darkbrown;
   border-radius: 50%;
+}
+
+.feedback-feeling__radio:checked + .feedback-feeling__caption:active::after {
+  background-color: rgba(51, 51, 51, 0.3);
 }
 
 @media (min-width: $desktop-width) {

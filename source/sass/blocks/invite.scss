@@ -124,6 +124,10 @@
   }
 }
 
+.invite__button--disabled {
+  background-color: $grey-disabled;
+}
+
 @media (min-width: $tablet-width) {
   .invite__button {
     width: 458px;
