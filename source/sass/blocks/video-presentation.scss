@@ -1,7 +1,7 @@
 .video-presentation__wrapper {
   width: 100%;
   padding-top: 32px;
-  padding-bottom: 49px;
+  padding-bottom: 38px;
 
   display: grid;
   grid-template-columns: auto;
@@ -39,7 +39,7 @@
 .video-presentation__header {
   margin: 0;
   padding: 0;
-  padding-bottom: 26px;
+  padding-bottom: 30px;
 
   font-family: $fontbold;
   font-size: 18px;
@@ -156,6 +156,8 @@
   height: 201px;
   object-fit: cover;
 
+  background-color: #b9af77;
+
   font-size: 0;
   line-height: 0;
 }
@@ -229,7 +231,7 @@
 .video-presentation__video-toggle::after {
   content: "";
   position: absolute;
-  top: 17px;
+  top: 18px;
   left: 55px;
   width: 11px;
   height: 11px;
@@ -247,7 +249,7 @@
 
 @media (min-width: $desktop-width) {
   .video-presentation__video-toggle::after {
-    top: 41px;
+    top: 42px;
     left: 140px;
   }
 }

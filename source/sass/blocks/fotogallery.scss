@@ -81,6 +81,18 @@
   display: block;
 }
 
+.fotogallery__block:nth-child(3) .fotogallery__full-size-img {
+  background-color: #644a38;
+}
+
+.fotogallery__block:nth-child(4) .fotogallery__full-size-img {
+  background-color: #2e4739;
+}
+
+.fotogallery__block:nth-child(5) .fotogallery__full-size-img {
+  background-color: #e6af98;
+}
+
 @media (min-width: $desktop-width) {
   .fotogallery__full-size-img {
     grid-row-start: 1;
@@ -181,7 +193,7 @@
   }
 
   .fotogallery__block:nth-child(5) .fotogallery__caption {
-    padding-left: 0;
+    padding-left: 18px;
     padding-right: 21px;
   }
 }
