@@ -26,12 +26,16 @@
         </ul>
       </nav>
       <a class="page-header__logo" href="/">
-        <img class="logo" src="img/logotype-mobile.svg" alt="City of Sedona">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logotype-tablet.svg">
+          <img class="logo" src="img/logotype-mobile.svg" alt="City of Sedona">
+        </picture>
       </a>
     </header>
     <main class="page-main">
       <div class="signboard-small signboard-small__wrapper">
-        <img class="signboard-small__img" src="img/SEDONA.png" alt="Welcome to Sedona">
+        <img class="signboard-small__img" src="img/SEDONA.svg" alt="Welcome to Sedona" width="229px" height="39px">
       </div>
       <h1 class="visually-hidden"></h1>
       <section class="feedback-preview feedback-preview__wrapper">

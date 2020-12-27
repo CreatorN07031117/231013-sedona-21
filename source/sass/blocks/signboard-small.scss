@@ -26,13 +26,60 @@
 
 .signboard-small {
   background-color: #e4f1f9;
-  background-image: url("../img/back-desktop.png");
+  background-image: url("../img/back-mobile.jpg");
   background-size: cover;
+  background-position: center bottom;
+}
+
+@media (min-resolution: 2dppx) {
+  .signboard-small {
+    background-image: url("../img/back-mobile@2.jpg");
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .signboard-small {
+    background-image: url("../img/back-tablet.jpg");
+  }
+}
+
+@media (min-width: $tablet-width) and (min-resolution: 2dppx) {
+  .signboard-small {
+    background-image: url("../img/back-tablet@2x.jpg");
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .signboard-small {
+    background-image: url("../img/back-desktop.jpg");
+  }
+}
+
+@media (min-width: $desktop-width) and (min-resolution: 2dppx) {
+  .signboard-small {
+    background-image: url("../img/back-desktop@2x.jpg");
+  }
 }
 
 .signboard-small__img {
+  width: 229px;
+  height: 39px;
   margin-left: auto;
   margin-right: auto;
+}
+
+@media (min-width: $tablet-width) {
+  .signboard-small__img {
+    width: 457px;
+    height: 77.6px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .signboard-small__img {
+    width: 459.5px;
+    height: 80px;
+  }
 }
 
 /*Треугольники*/
