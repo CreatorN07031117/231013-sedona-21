@@ -18,7 +18,7 @@
 
 @media (min-width: $desktop-width) {
   .feedback-user-contacts__wrapper {
-    padding-top: 68px;
+    padding-top: 50px;
     padding-bottom: 34px;
     padding-left: 118px;
     padding-right: 118px;
@@ -77,12 +77,12 @@
 /*Стили полей*/
 
 .feedback-user-contacts__field {
-  padding-top: 19px;
-  padding-bottom: 15px;
-  padding-left: 22px;
+  padding-top: 15px;
+  padding-bottom: 11px;
+  padding-left: 18px;
 
   background-color: $covergrey;
-  border: none;
+  border: 4px solid $covergrey;
 
   font-family: $fontbold;
   font-size: 18px;
@@ -91,18 +91,27 @@
   vertical-align: middle;
 
   position: relative;
+
+  &:hover {
+    background-color: $grey-hover;
+    border-color: $grey-hover;
+  }
+
+  &:active {
+    background-color: $white;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .feedback-user-contacts__field {
-    padding-top: 18px;
-    padding-bottom: 15px;
+    padding-top: 14px;
+    padding-bottom: 11px;
   }
 }
 
 .feedback-user-contacts__field--email {
-  padding-top: 17px;
-  padding-bottom: 16px;
+  padding-top: 13px;
+  padding-bottom: 12px;
 }
 
 @media (min-width: $desktop-width) {
@@ -229,6 +238,7 @@
 
 @media (min-width: $desktop-width) {
   .feedback-user-contacts__caption {
+    padding-top: 5px;
     padding-bottom: 0;
     padding-left: 0;
     padding-right: 17px;
@@ -289,7 +299,7 @@
   content: "";
   position: absolute;
   z-index: 2;
-  top: 34px;
+  top: 33px;
   right: 20px;
   width: 58px;
   height: 58px;
