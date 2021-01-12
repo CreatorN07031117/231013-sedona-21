@@ -1,10 +1,10 @@
-.photogallery__wrapper {
+.photo-gallery__wrapper {
   display: grid;
   grid-template-columns: auto;
 }
 
 @media (min-width: $tablet-width) {
-  .photogallery__wrapper {
+  .photo-gallery__wrapper {
     padding-left: 62px;
     padding-right: 58px;
 
@@ -14,7 +14,7 @@
 }
 
 @media (min-width: $desktop-width) {
-  .photogallery__wrapper {
+  .photo-gallery__wrapper {
     padding-left: 0;
     padding-right: 0;
 
@@ -23,13 +23,13 @@
   }
 }
 
-.photogallery {
+.photo-gallery {
   background-color: $white;
 }
 
 /*Блок с фото*/
 
-.photogallery__block {
+.photo-gallery__block {
   margin: 0;
   padding-top: 22px;
   padding-bottom: 16px;
@@ -44,7 +44,7 @@
 }
 
 @media (min-width: $tablet-width) {
-  .photogallery__block {
+  .photo-gallery__block {
     margin: 0;
     padding-top: 0;
     padding-bottom: 0;
@@ -56,7 +56,7 @@
 }
 
 @media (min-width: $tablet-width) {
-  .photogallery__block--large {
+  .photo-gallery__block--large {
     padding-top: 0;
     padding-bottom: 0;
 
@@ -66,7 +66,7 @@
 }
 
 @media (min-width: $desktop-width) {
-  .photogallery__block--large {
+  .photo-gallery__block--large {
     grid-column-start: 1;
     grid-column-end: 4;
   }
@@ -74,27 +74,27 @@
 
 /*Фото в галереи*/
 
-.photogallery__full-size-img {
+.photo-gallery__full-size-img {
   background-color: #e9a057;
   font-size: 0;
   line-height: 0;
   display: block;
 }
 
-.photogallery__block:nth-child(3) .photogallery__full-size-img {
+.photo-gallery__block:nth-child(3) .photo-gallery__full-size-img {
   background-color: #644a38;
 }
 
-.photogallery__block:nth-child(4) .photogallery__full-size-img {
+.photo-gallery__block:nth-child(4) .photo-gallery__full-size-img {
   background-color: #2e4739;
 }
 
-.photogallery__block:nth-child(5) .photogallery__full-size-img {
+.photo-gallery__block:nth-child(5) .photo-gallery__full-size-img {
   background-color: #e6af98;
 }
 
 @media (min-width: $desktop-width) {
-  .photogallery__full-size-img {
+  .photo-gallery__full-size-img {
     grid-row-start: 1;
     grid-row-end: 3;
     grid-column-start: 1;
@@ -102,7 +102,7 @@
   }
 }
 
-.photogallery__img {
+.photo-gallery__img {
   width: 100%;
   height: 280px;
   object-fit: cover;
@@ -112,19 +112,19 @@
 }
 
 @media (min-width: $tablet-width) {
-  .photogallery__img {
+  .photo-gallery__img {
     height: 267px;
   }
 }
 
-.photogallery__img--large {
+.photo-gallery__img--large {
   width: 100%;
   height: 280px;
   object-fit: cover;
 }
 
 @media (min-width: $tablet-width) {
-  .photogallery__img--large {
+  .photo-gallery__img--large {
     height: 400px;
 
     font-size: 0;
@@ -134,7 +134,7 @@
 
 /*Описание к фото*/
 
-.photogallery__caption {
+.photo-gallery__caption {
   padding-top: 11px;
 
   display: flex;
@@ -142,7 +142,7 @@
 }
 
 @media (min-width: $tablet-width) {
-  .photogallery__caption {
+  .photo-gallery__caption {
     padding-top: 16px;
     padding-bottom: 16px;
     padding-left: 20px;
@@ -154,17 +154,17 @@
     justify-content: space-between;
   }
 
-  .photogallery__block:nth-child(even) .photogallery__caption {
+  .photo-gallery__block:nth-child(even) .photo-gallery__caption {
     background-color: #eaeaea;
   }
 
-  .photogallery__block:first-child .photogallery__caption {
+  .photo-gallery__block:first-child .photo-gallery__caption {
     background-color: $covergrey;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .photogallery__caption {
+  .photo-gallery__caption {
     padding-top: 16px;
     padding-bottom: 17px;
     padding-left: 21px;
@@ -181,18 +181,18 @@
     grid-column-end: 2;
   }
 
-  .photogallery__block:nth-child(even) .photogallery__caption {
+  .photo-gallery__block:nth-child(even) .photo-gallery__caption {
     background-color: rgba(0, 0, 0, 0.3);
     padding-left: 23px;
     padding-right: 25px;
   }
 
-  .photogallery__block:nth-child(2) .photogallery__caption {
+  .photo-gallery__block:nth-child(2) .photo-gallery__caption {
     padding-left: 20px;
     padding-right: 22px;
   }
 
-  .photogallery__block:nth-child(5) .photogallery__caption {
+  .photo-gallery__block:nth-child(5) .photo-gallery__caption {
     padding-left: 18px;
     padding-right: 21px;
   }
@@ -200,12 +200,12 @@
 
 /*Блок название и автор*/
 
-.photogallery__caption-text {
+.photo-gallery__caption-text {
   display: flex;
   flex-direction: column;
 }
 
-.photogallery__header {
+.photo-gallery__header {
   font-family: $fontbold;
   font-size: 14px;
   line-height: 24px;
@@ -215,7 +215,7 @@
 }
 
 @media (min-width: $tablet-width) {
-  .photogallery__header {
+  .photo-gallery__header {
     font-family: $fontbold;
     font-size: 14px;
     line-height: 24px;
@@ -224,12 +224,12 @@
 }
 
 @media (min-width: $desktop-width) {
-  .photogallery__header {
+  .photo-gallery__header {
     color: $white;
   }
 }
 
-.photogallery__author {
+.photo-gallery__author {
   font-family: $font;
   font-size: 14px;
   line-height: 24px;
@@ -239,14 +239,14 @@
 }
 
 @media (min-width: $desktop-width) {
-  .photogallery__author {
+  .photo-gallery__author {
     color: $white;
   }
 }
 
 /*Блок «Мне нравится»*/
 
-.photogallery__likebox {
+.photo-gallery__likebox {
   padding-top: 8px;
 
   display: flex;
@@ -254,12 +254,12 @@
 }
 
 @media (min-width: $tablet-width) {
-  .photogallery__likebox {
+  .photo-gallery__likebox {
     padding-top: 0;
   }
 }
 
-.photogallery__likebutton {
+.photo-gallery__likebutton {
   width: 23px;
   margin: 0;
   padding: 0;
@@ -269,19 +269,19 @@
   background: transparent;
 }
 
-.photogallery__likeicon {
+.photo-gallery__likeicon {
   fill: $black;
   opacity: 0.3;
 }
 
 @media (min-width: $desktop-width) {
-  .photogallery__likeicon {
+  .photo-gallery__likeicon {
     fill: $white;
     opacity: 1;
   }
 }
 
-.photogallery__likestats {
+.photo-gallery__likestats {
   padding-top: 5px;
   padding-left: 13px;
 
@@ -294,24 +294,24 @@
 }
 
 @media (min-width: $tablet-width) {
-  .photogallery__likestats {
+  .photo-gallery__likestats {
     padding-left: 9px;
     padding-right: 10px;
   }
 
-  .photogallery__block:nth-child(even) .photogallery__likestats {
+  .photo-gallery__block:nth-child(even) .photo-gallery__likestats {
     padding-left: 9px;
     padding-right: 15px;
   }
 
-  .photogallery__block:nth-child(2) .photogallery__likestats {
+  .photo-gallery__block:nth-child(2) .photo-gallery__likestats {
     padding-left: 9px;
     padding-right: 0;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .photogallery__likestats {
+  .photo-gallery__likestats {
     color: $white;
     padding-left: 11px;
   }
