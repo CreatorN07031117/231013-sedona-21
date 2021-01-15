@@ -15,8 +15,22 @@ const del = require("del");
 const sync = require("browser-sync").create();
 
 // Styles
-
 const styles = () => {
+  return gulp.src("source/sass/style.scss")
+    .pipe(plumber())
+    .pipe(sourcemap.init())
+    .pipe(sass())
+    .pipe(postcss([
+      autoprefixer()
+    ]))
+    .pipe(sourcemap.write("."))
+    .pipe(gulp.dest("build/css"))
+    .pipe(sync.stream());
+}
+
+exports.styles = styles;
+
+const stylesmin = () => {
   return gulp.src("source/sass/style.scss")
     .pipe(plumber())
     .pipe(sourcemap.init())
@@ -31,7 +45,7 @@ const styles = () => {
     .pipe(sync.stream());
 }
 
-exports.styles = styles;
+exports.stylesmin = stylesmin;
 
 // HTML
 
@@ -138,6 +152,7 @@ const build = gulp.series(
   clean,
   gulp.parallel(
     styles,
+    stylesmin,
     html,
     sprite,
     copy,
@@ -153,6 +168,7 @@ exports.default = gulp.series(
   clean,
   gulp.parallel(
     styles,
+    stylesmin,
     html,
     sprite,
     copy,
