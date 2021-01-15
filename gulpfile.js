@@ -90,6 +90,18 @@ const sprite = () => {
 
 exports.sprite = sprite;
 
+// Scripts
+
+const scripts = () => {
+  return gulp.src("source/js/script.js")
+    .pipe(uglify())
+    .pipe(rename("script.min.js"))
+    .pipe(gulp.dest("build/js"))
+    .pipe(sync.stream());
+}
+
+exports.scripts = scripts;
+
 // Copy
 
 const copy = (done) => {
@@ -154,6 +166,7 @@ const build = gulp.series(
     styles,
     stylesmin,
     html,
+    scripts,
     sprite,
     copy,
     images,
@@ -170,6 +183,7 @@ exports.default = gulp.series(
     styles,
     stylesmin,
     html,
+    scripts,
     sprite,
     copy,
     createWebp
