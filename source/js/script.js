@@ -12,3 +12,37 @@ navToggle.addEventListener('click', function() {
     navMain.classList.remove('main-nav--opened');
   }
 });
+
+var button = document.querySelector(".feedback-finish__button");
+var successPopup = document.querySelector(".feedback-success-pop-up");
+var failurePopup = document.querySelector(".feedback-failure-pop-up");
+
+
+var form = document.querySelector(".feedback-form__form");
+var firstname = document.querySelector("[name=first-name]");
+var lastname = document.querySelector("[name=last-name]");
+var phone = document.querySelector("[name=phone]");
+var email = document.querySelector("[name=email]");
+
+form.addEventListener("submit", function(event) {
+  if (!firstname.value || !lastname.value || !phone.value || !email.value) {
+  event.preventDefault();
+  console.log('форма не отправлена');
+  failurePopup.classList.remove("feedback-failure-pop-up--hide");
+  } else {
+    event.preventDefault();
+    console.log('форма отправлена');
+    successPopup.classList.remove("feedback-success-pop-up--hide");
+  }
+});
+
+var failureCloseBtn = document.querySelector(".feedback-failure-pop-up__button");
+var successCloseBtn = document.querySelector(".feedback-success-pop-up__button");
+
+failureCloseBtn.addEventListener("click", function() {
+  failurePopup.classList.add("feedback-failure-pop-up--hide");
+  });
+
+successCloseBtn.addEventListener("click", function() {
+  successPopup.classList.add("feedback-success-pop-up--hide");
+  });

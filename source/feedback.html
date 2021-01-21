@@ -7,8 +7,8 @@
         <link rel="stylesheet" href="css/style.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" type="image/x-icon" href="/img/icon.ico">
-    <link rel="preload" href="fonts/ptsans.woff2">
-    <link rel="preload" href="fonts/ptsansbold.woff2">
+    <link rel="preload" href="fonts/ptsans.woff2" as="style">
+    <link rel="preload" href="fonts/ptsansbold.woff2" as="style">
   </head>
   <body class="page-body">
     <svg style="display: none">
@@ -43,7 +43,7 @@
           </li>
         </ul>
       </nav>
-      <a class="page-header__logo" href="/">
+      <a class="page-header__logo" href="index.html">
         <picture>
           <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
           <source media="(min-width: 768px)" srcset="img/logotype-tablet.svg">
@@ -53,9 +53,8 @@
     </header>
     <main class="page-main">
       <div class="signboard-small signboard-small__wrapper">
-        <img class="signboard-small__img" src="img/sedona.svg" alt="Welcome to Sedona" width="229px" height="39px">
+        <img class="signboard-small__img" src="img/sedona.svg" alt="Welcome to Sedona" width="229" height="39">
       </div>
-      <h1 class="visually-hidden"></h1>
       <section class="feedback-preview feedback-preview__wrapper">
         <h2 class="feedback-preview__header">Оставьте свой отзыв</h2>
         <p class="feedback-preview__text">Помогите нашим отелям стать лучше!<br class="visually-mobile"> Оставьте отзыв о них, а также о посещенных вами достопримичательностях</p>
@@ -80,12 +79,12 @@
           <div class="feedback-user-contacts  feedback-user-contacts__wrapper">
             <p class="feedback-user-contacts__header">Контактная информация:</p>
             <label class="feedback-user-contacts__label feedback-user-contacts__label--user-phone">
-              <span class="feedback-user-contacts__caption"><span class="feedback-user-contacts__caption--extend">Контактный</span> телефон<sup>*</sup>:</span>
-              <input class="feedback-user-contacts__field feedback-user-contacts__field--phone" type="tel" placeholder="Введите телефон">
+              <span class="feedback-user-contacts__caption"><span class="feedback-user-contacts__caption-extend">Контактный</span> телефон<sup>*</sup>:</span>
+              <input class="feedback-user-contacts__field feedback-user-contacts__field--phone" name="phone" type="tel" placeholder="Введите телефон" pattern="[0-9]{6,15}"/>
             </label>
             <label class="feedback-user-contacts__label feedback-user-contacts__label--user-email">
               <span class="feedback-user-contacts__caption">Электронная почта<sup>*</sup>:</span>
-              <input class="feedback-user-contacts__field feedback-user-contacts__field--email" type="tel" placeholder="Введите e-mail">
+              <input class="feedback-user-contacts__field feedback-user-contacts__field--email" name="email" type="email" placeholder="Введите e-mail">
             </label>
           </div>
           <div class="feedback-feeling feedback-feeling__wrapper">
@@ -142,21 +141,21 @@
           <ul class="footer-social__list">
             <li class="footer-social__item">
               <a class="social__link social__link--twitter" href="#" target="blank">
-                <svg class="social__logo--twitter" width="20" height="14">
+                <svg class="social__logo social__logo--twitter" width="20" height="14">
                   <use xlink:href="#logo-twitter"></use>
                 </svg>
                 Twitter</a>
             </li>
             <li class="footer-social__item">
               <a class="social__link social__link--facebook" href="#" target="blank">
-                <svg class="social__logo--facebook" width="20" height="14">
+                <svg class="social__logo social__logo--facebook" width="20" height="14">
                   <use xlink:href="#logo-facebook"></use>
                 </svg>
                 Facebook</a>
             </li>
             <li class="footer-social__item">
               <a class="social__link social__link--youtube" href="#" target="blank">
-                <svg class="social__logo--youtube">
+                <svg class="social__logo social__logo--youtube">
                   <use xlink:href="#logo-youtube"></use>
                 </svg>
                 Youtube</a>
@@ -173,6 +172,18 @@
         </div>
       </div>
     </footer>
+    <div class="feedback-failure-pop-up feedback-failure-pop-up__wrapper feedback-failure-pop-up--hide">
+      <h3 class="feedback-failure-pop-up__header">Что-то пошло не так!</h3>
+      <p class="feedback-failure-pop-up__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+      <button class="feedback-failure-pop-up__button">Ок</button>
+    </div>
+    <div class="feedback-success-pop-up feedback-success-pop-up__wrapper feedback-success-pop-up--hide">
+      <h3 class="feedback-success-pop-up__header">Ваш отзыв отправлен!</h3>
+      <p class="feedback-success-pop-up__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам.<br> В ближайшее время мы опубликуем его на сайте.</p>
+      <div class="feedback-success-pop-up__button-block">
+        <button class="feedback-success-pop-up__button">Закрыть окно</button>
+      </div>
+    </div>
     <script src="js/script.min.js"></script>
   </body>
 </html>

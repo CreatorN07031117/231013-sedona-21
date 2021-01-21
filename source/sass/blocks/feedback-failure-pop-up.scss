@@ -1,0 +1,143 @@
+.feedback-failure-pop-up {
+  background-color: $white;
+  box-shadow: 0 10px 15px -5px rgba(134, 134, 134, 0.22);
+}
+
+@media (min-width: $tablet-width) {
+  .feedback-failure-pop-up {
+    box-shadow: 0 10px 15px 0 rgba(134, 134, 134, 0.22);
+  }
+}
+
+.feedback-failure-pop-up--hide {
+  visibility: hidden;
+  z-index: -2;
+}
+
+.feedback-failure-pop-up--show {
+  visibility: visible;
+  z-index: 2;
+}
+
+.feedback-failure-pop-up__wrapper {
+  width: 100%;
+  padding-top: 40px;
+  padding-bottom: 36px;
+
+  display: flex;
+  flex-direction: column;
+
+  position: fixed;
+  top: 30%;
+  z-index: 5;
+}
+
+@media (min-width: $tablet-width) {
+  .feedback-failure-pop-up__wrapper {
+    width: 400px;
+    padding-top: 52px;
+    padding-bottom: 49px;
+
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.feedback-failure-pop-up__header {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 27px;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-left: auto;
+  margin-right: auto;
+
+  font-family: $fontbold;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .feedback-failure-pop-up__header {
+
+    padding-bottom: 20px;
+    padding-left: 90px;
+    padding-right: 90px;
+    margin-left: auto;
+    margin-right: auto;
+
+    font-size: 30px;
+    line-height: 40px;
+  }
+}
+
+.feedback-failure-pop-up__text {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 22px;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-left: auto;
+  margin-right: auto;
+
+  font-family: $font;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .feedback-failure-pop-up__text {
+    padding-bottom: 38px;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
+
+.feedback-failure-pop-up__button {
+  width: 180px;
+  margin: 0;
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 18px;
+  padding-bottom: 14px;
+
+  background-color: $blue;
+  border: none;
+
+  font-family: $fontbold;
+  font-size: 18px;
+  line-height: 26px;
+  color: $white;
+  font-weight: bold;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+
+  cursor: pointer;
+
+  &:hover {
+    background-color: $blue-hover;
+  }
+
+  &:active {
+    background-color: $blue-down;
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &:disabled {
+    background-color: $grey-disabled;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .feedback-failure-pop-up__button {
+    width: 272px;
+
+    font-size: 21px;
+  }
+}

@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="css/style.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" type="image/x-icon" href="/img/icon.ico">
-    <link rel="preload" href="fonts/ptsans.woff2">
-    <link rel="preload" href="fonts/ptsansbold.woff2">
+    <link rel="preload" href="fonts/ptsans.woff2" as="style">
+    <link rel="preload" href="fonts/ptsansbold.woff2" as="style">
   </head>
   <body class="page-body">
     <svg style="display: none;">
@@ -58,7 +58,7 @@
           </li>
         </ul>
       </nav>
-      <a class="page-header__logo" href="/">
+      <a class="page-header__logo" href="index.html">
         <picture>
           <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
           <source media="(min-width: 768px)" srcset="img/logotype-tablet.svg">
@@ -68,7 +68,7 @@
     </header>
     <main class="page-main">
       <div class="signboard-small signboard-small__wrapper">
-        <img class="signboard-small__img" src="img/sedona.svg" alt="Welcome to Sedona" width="229px" height="39px">
+        <img class="signboard-small__img" src="img/sedona.svg" alt="Welcome to Sedona" width="229" height="39">
       </div>
       <article class="photo-gallery photo-gallery__wrapper">
         <div class="gallery-preview gallery-preview__wrapper">
@@ -83,7 +83,7 @@
               <source type="image/webp" srcset="img/photo-1-mobile.webp 1x, img/photo-1-mobile@2x.webp 2x">
               <source media="(min-width: 1200px)" srcset="img/photo-1-desktop.jpg 1x, img/photo-1-desktop@2.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/photo-1-tablet.jpg 1x, img/photo-1-tablet@2x.jpg 2x">
-              <img class="photo-gallery__img photo-gallery__img--large" src="img/photo-1-mobile.jpg" srcset="img/photo-1-mobile@2x.jpg" width="100%" height="280px" alt="Неродные просторы">
+              <img class="photo-gallery__img photo-gallery__img--large" src="img/photo-1-mobile.jpg" srcset="img/photo-1-mobile@2x.jpg" width="280" height="280" alt="Неродные просторы">
             </picture>
           </a>
           <figcaption class="photo-gallery__caption">
@@ -108,9 +108,9 @@
               <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-2-desktop.webp 1x, img/photo-2-desktop@2x.webp 2x">
               <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-2-tablet.webp 1x, img/photo-2-tablet@2x.webp 2x">
               <source type="image/webp" srcset="img/photo-2-mobile.webp 1x, img/photo-2-mobile@2x.webp 2x">
-              <source media="(min-width: 1200px)" srcset="img/photo-2-desktop.jpg 1x, img/photo-2-desktop@2x.jpg 2x"">
+              <source media="(min-width: 1200px)" srcset="img/photo-2-desktop.jpg 1x, img/photo-2-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/photo-2-tablet.jpg 1x, img/photo-2-tablet@2x.jpg 2x">
-              <img class="photo-gallery__img" src="img/photo-2-mobile.jpg" srcset="img/photo-2-mobile@2x.jpg" width="100%" height="280px" alt="Местная растительность">
+              <img class="photo-gallery__img" src="img/photo-2-mobile.jpg" srcset="img/photo-2-mobile@2x.jpg" width="280" height="280" alt="Местная растительность">
             </picture>
           </a>
           <figcaption class="photo-gallery__caption">
@@ -137,7 +137,7 @@
               <source type="image/webp" srcset="img/photo-3-mobile.webp 1x, img/photo-3-mobile@2x.webp 2x">
               <source media="(min-width: 1200px)" srcset="img/photo-3-desktop.jpg 1x, img/photo-3-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/photo-3-tablet.jpg 1x, img/photo-3-tablet@2x.jpg 2x">
-              <img class="photo-gallery__img" src="img/photo-3-mobile.jpg" srcset="img/photo-3-mobile@2x.jpg" width="100%" height="280px" alt="Дорога на север">
+              <img class="photo-gallery__img" src="img/photo-3-mobile.jpg" srcset="img/photo-3-mobile@2x.jpg" width="280" height="280" alt="Дорога на север">
             </picture>
           </a>
           <figcaption class="photo-gallery__caption">
@@ -164,7 +164,8 @@
                 <source type="image/webp" srcset="img/photo-4-mobile.webp 1x, img/photo-4-mobile@2x.webp 2x">
                 <source media="(min-width: 1200px)" srcset="img/photo-4-desktop.jpg 1x, img/photo-4-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="img/photo-4-tablet.jpg 1x, img/photo-4-tablet@2x.jpg 2x">
-                <img class="photo-gallery__img" src="img/photo-4-mobile.jpg" srcset="img/photo-4-mobile@2x.jpg" width="100%" height="280px" alt="Мост Дьявола">
+                <img class="photo-gallery__img" src="img/photo-4-mobile.jpg" srcset="img/photo-4-mobile@2x.jpg" width="280" height="280" alt="Мост Дьявола">
+              </picture>
             </a>
             <figcaption class="photo-gallery__caption">
               <div class="photo-gallery__caption-text">
@@ -193,7 +194,7 @@
             <source type="image/webp" srcset="img/video-mobile.webp 1x, img/video-mobile@2x.webp 2x">
             <source media="(min-width: 1200px)" srcset="img/video-desktop.jpg 1x, img/video-desktop@2x.jpg 2x">
             <source media="(min-width: 768px)" srcset="img/video-tablet.jpg 1x, img/video-tablet@2x.jpg 2x">
-            <img class="video-presentation__preview-img" src="img/video-mobile.jpg" srcset="img/video-mobile@2x.jpg" width="100%" height="201px" alt="Почему стоит посетить Седону">
+            <img class="video-presentation__preview-img" src="img/video-mobile.jpg" srcset="img/video-mobile@2x.jpg" width="320" height="201" alt="Почему стоит посетить Седону">
           </picture>
         </div>
         <div class="video-presentation__scroll-bar">
@@ -237,21 +238,21 @@
           <ul class="footer-social__list">
             <li class="footer-social__item">
               <a class="social__link social__link--twitter" href="#" target="blank">
-                <svg class="social__logo--twitter" width="20" height="14">
+                <svg class="social__logo social__logo--twitter" width="20" height="14">
                   <use xlink:href="#logo-twitter"></use>
                 </svg>
                 Twitter</a>
             </li>
             <li class="footer-social__item">
               <a class="social__link social__link--facebook" href="#" target="blank" >
-                <svg class="social__logo--facebook" width="20" height="14">
+                <svg class="social__logo social__logo--facebook" width="20" height="14">
                   <use xlink:href="#logo-facebook"></use>
                 </svg>
                 Facebook</a>
             </li>
             <li class="footer-social__item">
               <a class="social__link social__link--youtube" href="#" target="blank">
-                <svg class="social__logo--youtube">
+                <svg class="social__logo social__logo--youtube">
                   <use xlink:href="#logo-youtube"></use>
                 </svg>
                 Youtube</a>
@@ -269,6 +270,5 @@
       </div>
     </footer>
     <script src="js/script.min.js"></script>
-    </script>
   </body>
 </html>

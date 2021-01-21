@@ -141,6 +141,11 @@
   color: $black;
 }
 
+.feedback-usertext__field::-moz-placeholder {
+  color: $black;
+  opacity: 1;
+}
+
 @media (min-width: $tablet-width) {
   .feedback-usertext__field {
     height: 115px;

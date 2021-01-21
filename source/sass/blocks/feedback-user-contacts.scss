@@ -109,19 +109,31 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .feedback-user-contacts__field {
+    width: 234px;
+    padding-bottom: 10.5px;
+  }
+}
+
 .feedback-user-contacts__field--email {
   padding-top: 13px;
   padding-bottom: 12px;
 }
 
 @media (min-width: $desktop-width) {
-  .feedback-user-contacts__field {
-    width: 234px;
+  .feedback-user-contacts__field--email {
+    padding-bottom: 11.5px;
   }
 }
 
 .feedback-user-contacts__field::placeholder {
   color: $black;
+}
+
+.feedback-user-contacts__field::-moz-placeholder {
+  color: $black;
+  opacity: 1;
 }
 
 /*Заголовок блока*/
@@ -252,7 +264,7 @@
 }
 
 @media (min-width: $desktop-width) {
-  .feedback-user-contacts__caption--extend {
+  .feedback-user-contacts__caption-extend {
     display: none;
   }
 }

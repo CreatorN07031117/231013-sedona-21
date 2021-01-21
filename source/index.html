@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="css/style.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" type="image/x-icon" href="/img/icon.ico">
-    <link rel="preload" href="fonts/ptsans.woff2">
-    <link rel="preload" href="fonts/ptsansbold.woff2">
+    <link rel="preload" href="fonts/ptsans.woff2" as="style">
+    <link rel="preload" href="fonts/ptsansbold.woff2" as="style">
   </head>
   <body class="page-body">
     <svg style="display: none;">
@@ -43,7 +43,7 @@
           </li>
         </ul>
       </nav>
-        <a class="page-header__logo" href="/">
+        <a class="page-header__logo" href="index.html">
           <picture>
             <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
             <source media="(min-width: 768px)" srcset="img/logotype-tablet.svg">
@@ -59,7 +59,6 @@
           <img class="signboard__index-img" src="img/text-index.svg" alt="Welcome to Sedona" width="282" height="214">
         </picture>
       </div>
-      <h1 class="visually-hidden"></h1>
       <section class="intro intro__wrapper">
         <h2 class="intro__header">Седона — небольшой<br class="visually-mobile"> городок в Аризоне, заслуживающий большего!</h2>
         <p class="intro__text">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон</p>
@@ -70,14 +69,14 @@
           <span class="advantages-alone__number">№1</span>
           <p class="advantages-alone__text">Седона не аттракцион для туристов, там течет своя<br class="visually-tablet"> жизнь</p>
         </div>
-        <div class="advantages-img advantages-img__wrapper--real-town">
+        <div class="advantages-img advantages-img__wrapper advantages-img__wrapper--real-town">
           <picture>
               <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-city@1xdesk.webp 1x, img/photo-city@1x@2xdesk.webp 2x">
               <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-city@1xtab.webp 1x, img/photo-city@1x@2xtab.webp 2x">
               <source type="image/webp" srcset="img/photo-city@1x1.webp 1x, img/photo-city@1x1@2x.webp 2x">
               <source media="(min-width: 1200px)" srcset="img/photo-city@1xdesk.jpg 1x, img/photo-city@1x@2xdesk.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/photo-city@1xtab.jpg 1x, img/photo-city@1x@2xtab.jpg 2x">
-              <img class="advantages-img__img  advantages-img__img--real-town" src="img/photo-city@1x1.jpg" srcset="img/photo-city@1x1@2x.jpg" alt="Настоящий городок" width="100%" height="260px">
+              <img class="advantages-img__img  advantages-img__img--real-town" src="img/photo-city@1x1.jpg" srcset="img/photo-city@1x1@2x.jpg" alt="Настоящий городок" width="320" height="260">
           </picture>
         </div>
       </section>
@@ -101,14 +100,14 @@
           <span class="advantages-alone__number">№2</span>
           <p class="advantages-alone__text">Да, по нему можно<br class="visually-tablet"> пройти!<br class="visually-desktop"> Если вы<br class="visually-tablet"> осмелитесь, конечно</p>
         </div>
-        <div class="advantages-img advantages-img__wrapper--devil-bridge">
+        <div class="advantages-img advantages-img__wrapper advantages-img__wrapper--devil-bridge">
           <picture>
             <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-bridge@1xdesk.webp 1x, img/photo-bridge@1x@2xdesk.webp 2x">
             <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-bridge@1xtab.webp 1x, img/photo-bridge@1x@2xtab.webp 2x">
             <source type="image/webp" srcset="img/photo-bridge@1x.webp 1x, img/photo-bridge@1x@2x.webp 2x">
             <source media="(min-width: 1200px)" srcset="img/photo-bridge@1xdesk.jpg 1x, img/photo-bridge@1x@2xdesk.jpg 2x">
             <source media="(min-width: 768px)" srcset="img/photo-bridge@1xtab.jpg 1x, img/photo-bridge@1x@2xtab.jpg 2x">
-            <img class="advantages-img__img advantages-img__img--devil-bridge" src="img/photo-bridge@1x.jpg" srcset="img/photo-bridge@1x@2x.jpg" alt="Настоящий городок" width="100%" height="260px">
+            <img class="advantages-img__img advantages-img__img--devil-bridge" src="img/photo-bridge@1x.jpg" srcset="img/photo-bridge@1x@2x.jpg" alt="Настоящий городок" width="320" height="260">
           </picture>
         </div>
       </section>
@@ -121,7 +120,7 @@
         <div class="advantages__content">
           <h3 class="advantages__header">Красивая дорога</h3>
           <span class="advantages__number">№4</span>
-          <p class="advantages__text">Ехать в Седону из <nobr>Лас-Вегаса</nobr><br class="visually-mobile"> совсем не&nbsp;скучно</p>
+          <p class="advantages__text">Ехать в Седону из Лас-Вегаса<br class="visually-mobile"> совсем не&nbsp;скучно</p>
         </div>
         <div class="advantages__content">
           <h3 class="advantages__header">Мало туристов</h3>
@@ -135,7 +134,7 @@
         <a class="invite__button">Найти гостиницу</a>
       </section>
       <div class="map map__wrapper">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d837846.1370629473!2d-112.18822372140362!3d34.885452443943734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1487402888390" width="100%" height="100%" style="border: 0;"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d837846.1370629473!2d-112.18822372140362!3d34.885452443943734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1487402888390" style="width: 100%; border: 0;" height="350"></iframe>
       </div>
     </main>
     <footer class="page-footer">
@@ -147,21 +146,21 @@
           <ul class="footer-social__list">
             <li class="footer-social__item">
               <a class="social__link social__link--twitter" href="#" target="blank">
-                <svg class="social__logo--twitter" width="20" height="14">
+                <svg class="social__logo social__logo--twitter" width="20" height="14">
                   <use xlink:href="#logo-twitter"></use>
                 </svg>
                 Twitter</a>
             </li>
             <li class="footer-social__item">
               <a class="social__link social__link--facebook" href="#" target="blank" >
-                <svg class="social__logo--facebook" width="20" height="14">
+                <svg class="social__logo social__logo--facebook" width="20" height="14">
                   <use xlink:href="#logo-facebook"></use>
                 </svg>
                 Facebook</a>
             </li>
             <li class="footer-social__item">
               <a class="social__link social__link--youtube" href="#" target="blank">
-                <svg class="social__logo--youtube">
+                <svg class="social__logo social__logo--youtube">
                   <use xlink:href="#logo-youtube"></use>
                 </svg>
                 Youtube</a>
