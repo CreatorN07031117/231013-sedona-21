@@ -65,11 +65,11 @@
             <p class="feedback-username__header">Представьтесь:</p>
             <label class="feedback-username__label feedback-username__label--first-name">
               <span class="feedback-username__caption">Имя<sup>*</sup>:</span>
-              <input class="feedback-username__field feedback-username__field--first-name" type="text" name="first-name" placeholder="Петр">
+              <input class="feedback-username__field feedback-username__field--first-name" type="text" required name="first-name" placeholder="Петр">
             </label>
             <label class="feedback-username__label feedback-username__label--last-name">
               <span class="feedback-username__caption">Фамилия<sup>*</sup>:</span>
-              <input class="feedback-username__field feedback-username__field--last-name" type="text" name="last-name" placeholder="Иванов">
+              <input class="feedback-username__field feedback-username__field--last-name" type="text" required name="last-name" placeholder="Иванов">
             </label>
             <label class="feedback-username__label feedback-username__label--middle-name">
               <span class="feedback-username__caption">Отчество:</span>
@@ -80,11 +80,11 @@
             <p class="feedback-user-contacts__header">Контактная информация:</p>
             <label class="feedback-user-contacts__label feedback-user-contacts__label--user-phone">
               <span class="feedback-user-contacts__caption"><span class="feedback-user-contacts__caption-extend">Контактный</span> телефон<sup>*</sup>:</span>
-              <input class="feedback-user-contacts__field feedback-user-contacts__field--phone" name="phone" type="tel" placeholder="Введите телефон" pattern="[0-9]{6,15}"/>
+              <input class="feedback-user-contacts__field feedback-user-contacts__field--phone" name="phone" required type="tel" placeholder="Введите телефон" pattern="[0-9]{6,15}"/>
             </label>
             <label class="feedback-user-contacts__label feedback-user-contacts__label--user-email">
               <span class="feedback-user-contacts__caption">Электронная почта<sup>*</sup>:</span>
-              <input class="feedback-user-contacts__field feedback-user-contacts__field--email" name="email" type="email" placeholder="Введите e-mail">
+              <input class="feedback-user-contacts__field feedback-user-contacts__field--email" name="email" required type="email" placeholder="Введите e-mail">
             </label>
           </div>
           <div class="feedback-feeling feedback-feeling__wrapper">
@@ -123,7 +123,7 @@
           </div>
           <div class="feedback-usertext feedback-usertext__wrapper">
             <p class="feedback-usertext__header">Опишите свои эмоции:</p>
-              <textarea class="feedback-usertext__field" placeholder="Опишите подробно все свои восторги"></textarea>
+              <textarea class="feedback-usertext__field" placeholder="Опишите подробно все свои восторги" required></textarea>
           </div>
           <div class="feedback-finish feedback-finish__wrapper">
             <button class="feedback-finish__button button" type="submit">Отправить отзыв</button>
