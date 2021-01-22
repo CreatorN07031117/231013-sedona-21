@@ -10,12 +10,13 @@
 }
 
 .feedback-success-pop-up--hide {
-  visibility: hidden;
+  display: none;
   z-index: -2;
 }
 
 .feedback-success-pop-up--show {
-  visibility: visible;
+  display: flex;
+  flex-direction: column;
   z-index: 2;
 }
 
@@ -23,11 +24,8 @@
   width: 100%;
   padding-top: 38px;
 
-  display: flex;
-  flex-direction: column;
-
   position: fixed;
-  top: 30%;
+  top: 40%;
   z-index: 5;
 }
 
@@ -38,6 +36,7 @@
 
     left: 50%;
     transform: translateX(-50%);
+    top: 20%;
   }
 }
 
@@ -103,8 +102,8 @@
 @media (min-width: $tablet-width) {
   .feedback-success-pop-up__button-block {
     padding: 44px;
-    padding-left: 95px;
-    padding-right: 95px;
+    padding-left: 90px;
+    padding-right: 90px;
   }
 }
 
@@ -116,6 +115,8 @@
   margin-right: auto;
   padding-top: 18px;
   padding-bottom: 14px;
+
+  display: block;
 
   background-color: $blue;
   border: none;

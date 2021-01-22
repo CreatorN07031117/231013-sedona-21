@@ -24,15 +24,34 @@ var lastname = document.querySelector("[name=last-name]");
 var phone = document.querySelector("[name=phone]");
 var email = document.querySelector("[name=email]");
 
+/*
 form.addEventListener("submit", function(event) {
   if (!firstname.value || !lastname.value || !phone.value || !email.value) {
   event.preventDefault();
   console.log('форма не отправлена');
   failurePopup.classList.remove("feedback-failure-pop-up--hide");
+  failurePopup.classList.add("feedback-failure-pop-up--show");
   } else {
     event.preventDefault();
     console.log('форма отправлена');
     successPopup.classList.remove("feedback-success-pop-up--hide");
+    successPopup.classList.remove("feedback-success-pop-up--show");
+  }
+});*/
+
+form.addEventListener("submit", function(event) {
+    event.preventDefault();
+    console.log('форма отправлена');
+    successPopup.classList.remove("feedback-success-pop-up--hide");
+    successPopup.classList.remove("feedback-success-pop-up--show");
+});
+
+
+button.addEventListener("click", function() {
+  if (!firstname.value || !lastname.value || !phone.value || !email.value) {
+    console.log('форма не отправлена');
+    failurePopup.classList.remove("feedback-failure-pop-up--hide");
+    failurePopup.classList.add("feedback-failure-pop-up--show");
   }
 });
 
@@ -41,8 +60,10 @@ var successCloseBtn = document.querySelector(".feedback-success-pop-up__button")
 
 failureCloseBtn.addEventListener("click", function() {
   failurePopup.classList.add("feedback-failure-pop-up--hide");
-  });
+  failurePopup.classList.remove("feedback-failure-pop-up--show");
+});
 
 successCloseBtn.addEventListener("click", function() {
   successPopup.classList.add("feedback-success-pop-up--hide");
-  });
+  successPopup.classList.remove("feedback-success-pop-up--show");
+});
