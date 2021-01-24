@@ -15,9 +15,9 @@
 
 @media (min-width: $tablet-width) {
   .intro__wrapper {
-    padding-top: 45px;
+    padding-top: 44px;
     padding-bottom: 53px;
-    padding-left: 140px;
+    padding-left: 138px;
     padding-right: 140px;
 
     display: grid;
@@ -27,9 +27,9 @@
 
 @media (min-width: $desktop-width) {
   .intro__wrapper {
-    padding-top: 53px;
-    padding-bottom: 42px;
-    padding-left: 320px;
+    padding-top: 55px;
+    padding-bottom: 41px;
+    padding-left: 317px;
     padding-right: 320px;
 
     display: grid;
@@ -40,7 +40,7 @@
 .intro__header {
   margin: 0;
   padding: 0;
-  padding-bottom: 32px;
+  padding-bottom: 28px;
 
   font-family: $fontbold;
   font-size: 18px;
@@ -55,7 +55,7 @@
   .intro__header {
     margin: 0;
     padding: 0;
-    padding-bottom: 33px;
+    padding-bottom: 31px;
 
     font-size: 21px;
     line-height: 26px;
@@ -66,7 +66,7 @@
   .intro__header {
     margin: 0;
     padding: 0;
-    padding-bottom: 34px;
+    padding-bottom: 32px;
   }
 }
 

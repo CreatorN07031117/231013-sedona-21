@@ -11,15 +11,15 @@
 
 @media (min-width: $tablet-width) {
   .signboard__wrapper {
-    height: 439px;
+    height: 441px;
     padding-top: 77px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .signboard__wrapper {
-    height: 442px;
-    padding-top: 75px;
+    height: 441px;
+    padding-top: 78px;
   }
 }
 
@@ -110,7 +110,7 @@
     content: "";
     position: absolute;
     z-index: 2;
-    top: 447px;
+    top: 448px;
     width: 100%;
     min-width: $tablet-width;
     max-width: $desktop-width;
@@ -129,7 +129,7 @@
     content: "";
     position: absolute;
     z-index: 2;
-    top: 447px;
+    top: 449px;
     width: 100%;
     min-width: $tablet-width;
     max-width: $desktop-width;

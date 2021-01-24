@@ -1,0 +1,45 @@
+.advantages-img__wrapper--real-town {
+  background-color: #decfd0;
+  font-size: 0;
+  line-height: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .advantages-img__wrapper--real-town {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    background-color: #decfd0;
+  }
+}
+
+.advantages-img__wrapper--devil-bridge {
+  background-color: #9c7b70;
+  object-fit: cover;
+  font-size: 0;
+  line-height: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .advantages-img__wrapper--devil-bridge {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    background-color: #9c7b70;
+  }
+}
+
+.advantages-img__img {
+  width: 100%;
+  min-height: 260px;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (min-width: $tablet-width) {
+  .advantages-img__img {
+    width: 100%;
+    min-height: 256px;
+    object-fit: cover;
+  }
+}

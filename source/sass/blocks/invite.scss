@@ -1,7 +1,7 @@
 .invite__wrapper {
   min-width: 320px;
-  padding-top: 34px;
-  padding-bottom: 49px;
+  padding-top: 32px;
+  padding-bottom: 48px;
 
   display: grid;
   grid-template-columns: auto;
@@ -32,7 +32,7 @@
 .invite__header {
   margin: 0;
   padding: 0;
-  padding-bottom: 23px;
+  padding-bottom: 22px;
 
   font-family: $fontbold;
   font-size: 21px;
@@ -92,7 +92,7 @@
 
 @media (min-width: $desktop-width) {
   .invite__text {
-    padding-bottom: 43px;
+    padding-bottom: 42px;
   }
 }
 

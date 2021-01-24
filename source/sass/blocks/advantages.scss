@@ -33,8 +33,8 @@
 
 @media (min-width: $tablet-width) {
   .advantages__content {
-    padding-top: 41px;
-    padding-bottom: 43px;
+    padding-top: 43px;
+    padding-bottom: 42px;
     padding-left: 32px;
     padding-right: 32px;
 
@@ -44,7 +44,7 @@
 
 @media (min-width: $desktop-width) {
   .advantages__content {
-    padding-top: 41px;
+    padding-top: 43px;
     padding-bottom: 62px;
     padding-left: 54px;
     padding-right: 54px;
@@ -75,7 +75,7 @@
     width: 122px;
     margin-left: auto;
     margin-right: auto;
-    padding-bottom: 15px;
+    padding-bottom: 12px;
 
     font-family: $fontbold;
     font-size: 21px;
@@ -87,7 +87,7 @@
 
 @media (min-width: $desktop-width) {
   .advantages__header {
-    padding-bottom: 15px;
+    padding-bottom: 13px;
   }
 }
 

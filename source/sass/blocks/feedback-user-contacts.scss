@@ -1,6 +1,6 @@
 .feedback-user-contacts__wrapper {
   padding-top: 20px;
-  padding-bottom: 14px;
+  padding-bottom: 16px;
 
   display: grid;
   grid-template-columns: auto;
@@ -9,8 +9,8 @@
 
 @media (min-width: $tablet-width) {
   .feedback-user-contacts__wrapper {
-    padding-top: 70px;
-    padding-bottom: 26px;
+    padding-top: 72px;
+    padding-bottom: 30px;
     padding-left: 60px;
     padding-right: 60px;
   }
@@ -19,7 +19,7 @@
 @media (min-width: $desktop-width) {
   .feedback-user-contacts__wrapper {
     padding-top: 50px;
-    padding-bottom: 34px;
+    padding-bottom: 16px;
     padding-left: 118px;
     padding-right: 118px;
 
@@ -57,28 +57,25 @@
   .feedback-user-contacts__label {
     padding-left: 0;
     padding-right: 0;
-    padding-bottom: 25px;
+    padding-bottom: 23px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .feedback-user-contacts__label {
-    padding-bottom: 0;
+    padding-bottom: 20px;
 
     display: flex;
     flex-direction: row;
     align-items: center;
-
-    grid-row-start: 2;
-    grid-row-end: 3;
   }
 }
 
 /*Стили полей*/
 
 .feedback-user-contacts__field {
-  padding-top: 15px;
-  padding-bottom: 11px;
+  padding-top: 14px;
+  padding-bottom: 10px;
   padding-left: 18px;
 
   background-color: $covergrey;
@@ -97,6 +94,10 @@
     border-color: $grey-hover;
   }
 
+  &:focus {
+    background-color: $white;
+  }
+
   &:active {
     background-color: $white;
   }
@@ -112,18 +113,18 @@
 @media (min-width: $desktop-width) {
   .feedback-user-contacts__field {
     width: 234px;
-    padding-bottom: 10.5px;
+    padding-bottom: 10px;
   }
 }
 
 .feedback-user-contacts__field--email {
-  padding-top: 13px;
-  padding-bottom: 12px;
+  padding-top: 14px;
+  padding-bottom: 10px;
 }
 
 @media (min-width: $desktop-width) {
   .feedback-user-contacts__field--email {
-    padding-bottom: 11.5px;
+    padding-bottom: 10px;
   }
 }
 
@@ -141,7 +142,7 @@
 .feedback-user-contacts__header {
   margin: 0;
   padding: 0;
-  padding-bottom: 17px;
+  padding-bottom: 16px;
 
   font-family: $fontbold;
   font-size: 18px;
@@ -154,7 +155,7 @@
 
 @media (min-width: $tablet-width) {
   .feedback-user-contacts__header {
-    padding-bottom: 21px;
+    padding-bottom: 19px;
 
     font-family: $fontbold;
     font-size: 21px;
@@ -165,7 +166,7 @@
 
 @media (min-width: $desktop-width) {
   .feedback-user-contacts__header {
-    padding-bottom: 73px;
+    padding-bottom: 72px;
     padding-right: 5px;
 
     grid-column-start: 1;
@@ -184,7 +185,7 @@
     top: 0;
     left: 0;
     width: 19%;
-    height: 11px;
+    height: 9px;
     border-bottom: 1px solid #dbdbdb;
   }
 
@@ -225,7 +226,7 @@
 
 .feedback-user-contacts__caption {
   padding-left: 22px;
-  padding-bottom: 7px;
+  padding-bottom: 8px;
 
   font-family: $font;
   font-size: 14px;
@@ -236,6 +237,7 @@
 
 .feedback-user-contacts__label--user-email .feedback-user-contacts__caption {
   padding-left: 21px;
+  padding-bottom: 6px;
 }
 
 @media (min-width: $tablet-width) {
@@ -279,7 +281,7 @@
   content: "";
   position: absolute;
   z-index: 2;
-  top: 33px;
+  top: 35px;
   right: 20px;
   width: 58px;
   height: 58px;
@@ -299,7 +301,7 @@
 @media (min-width: $desktop-width) {
   .feedback-user-contacts__label--user-phone::after {
     top: 0;
-    right: 80px;
+    right: 78px;
   }
 }
 
@@ -314,7 +316,7 @@
   top: 33px;
   right: 20px;
   width: 58px;
-  height: 58px;
+  height: 57px;
   background-color: #e6e6e6;
   background-image: url("../img/mail.svg");
   background-position: center;
@@ -330,7 +332,9 @@
 
 @media (min-width: $desktop-width) {
   .feedback-user-contacts__label--user-email::after {
+    height: 58px;
+
     top: 0;
-    right: 4px;
+    right: 0;
   }
 }

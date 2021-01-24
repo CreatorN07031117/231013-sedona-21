@@ -82,9 +82,18 @@
     border-color: $grey-hover;
   }
 
+  &:focus {
+    background-color: $white;
+  }
+
   &:active {
     background-color: $white;
   }
+}
+
+.feedback-username__field--last-name {
+  padding-top: 12px;
+  padding-bottom: 10px;
 }
 
 @media (min-width: $desktop-width) {
@@ -132,7 +141,7 @@
 @media (min-width: $desktop-width) {
   .feedback-username__header {
     text-align: left;
-    padding-bottom: 52px;
+    padding-bottom: 54px;
   }
 }
 
@@ -153,6 +162,7 @@
 .feedback-username__label--last-name .feedback-username__caption {
   padding-top: 18px;
   padding-right: 15px;
+  padding-bottom: 14px;
 }
 
 .feedback-username__label--middle-name .feedback-username__caption {
@@ -163,8 +173,9 @@
 
 @media (min-width: $tablet-width) {
   .feedback-username__caption {
-    padding-bottom: 14px;
-    padding-right: 14px;
+    padding-top: 18px;
+    padding-bottom: 13px;
+    padding-right: 13px;
   }
 
   .feedback-username__label--last-name .feedback-username__caption {
@@ -172,6 +183,7 @@
   }
 
   .feedback-username__label--middle-name .feedback-username__caption {
+    padding-top: 17px;
     padding-bottom: 13px;
     padding-right: 16px;
   }

@@ -39,22 +39,12 @@
 
 @media (min-width: $desktop-width) {
   .footer-copyright__text {
-    padding-left: 53px;
+    padding-left: 48px;
   }
 }
 
-.copyright__htmlacademy-logo {
-  width: 28px;
-  height: 37px;
-
-  fill: $black;
-
-  &:hover {
-    fill: $blue;
-  }
-
-  &:active {
-    fill: $black;
-    fill-opacity: 0.3;
-  }
+.footer-copyright__logo {
+  margin: 0;
+  padding: 0;
+  font-size: 0;
 }

@@ -1,13 +1,13 @@
 .feedback-finish__wrapper {
-  padding-top: 27px;
+  padding-top: 28px;
   padding-bottom: 37px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 19px;
+  padding-right: 21px;
 }
 
 @media (min-width: $tablet-width) {
   .feedback-finish__wrapper {
-    padding-top: 27px;
+    padding-top: 29px;
     padding-bottom: 62px;
     padding-left: 60px;
     padding-right: 60px;
@@ -22,7 +22,7 @@
 
 @media (min-width: $desktop-width) {
   .feedback-finish__wrapper {
-    padding-top: 27px;
+    padding-top: 29px;
     padding-bottom: 67px;
     padding-left: 120px;
     padding-right: 120px;
@@ -34,7 +34,7 @@
 .feedback-finish__button {
   width: 100%;
   padding-top: 18px;
-  padding-bottom: 15px;
+  padding-bottom: 14px;
   padding-left: 0;
   padding-right: 0;
 
@@ -72,9 +72,7 @@
     margin-right: auto;
     padding-top: 18px;
     padding-bottom: 14px;
-    /*
-    padding-left: 66px;
-    padding-right: 76px;*/
+    padding-right: 10px;
 
     text-align: center;
 

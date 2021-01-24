@@ -57,7 +57,7 @@
 
 @media (min-width: $tablet-width) {
   .video-presentation__header {
-    padding-bottom: 35px;
+    padding-bottom: 33px;
 
     font-family: $fontbold;
     font-size: 30px;
@@ -75,7 +75,7 @@
   }
 }
 
-.video-presentation_text {
+.video-presentation__text {
   margin: 0;
   padding-left: 42px;
   padding-right: 42px;
@@ -93,7 +93,7 @@
 }
 
 @media (min-width: $tablet-width) {
-  .video-presentation_text {
+  .video-presentation__text {
     margin: 0;
     padding-left: 155px;
     padding-right: 155px;
@@ -105,10 +105,10 @@
 }
 
 @media (min-width: $desktop-width) {
-  .video-presentation_text {
+  .video-presentation__text {
     padding-left: 370px;
     padding-right: 370px;
-    padding-bottom: 76px;
+    padding-bottom: 79px;
   }
 }
 
@@ -128,8 +128,8 @@
 @media (min-width: $tablet-width) {
   .video-presentation__preview {
     height: 500px;
-    padding-left: 62px;
-    padding-right: 58px;
+    padding-left: 60px;
+    padding-right: 60px;
     object-fit: cover;
 
     grid-column-start: 1;
@@ -278,8 +278,8 @@
 @media (min-width: $tablet-width) {
   .video-presentation__buttons-panel {
     height: 58px;
-    margin-left: 62px;
-    margin-right: 58px;
+    margin-left: 60px;
+    margin-right: 60px;
     padding-top: 35px;
     padding-left: 34px;
     padding-right: 40px;

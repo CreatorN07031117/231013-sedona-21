@@ -1,5 +1,5 @@
 .hashtag__text {
-  padding-right: 5px;
+  padding-right: 2px;
 
   display: block;
 
@@ -21,7 +21,8 @@
 
 @media (min-width: $desktop-width) {
   .hashtag__text {
+    padding-top: 14px;
     padding-left: 0;
-    padding-right: 66px;
+    padding-right: 68px;
   }
 }
