@@ -39,7 +39,7 @@
 .video-presentation__header {
   margin: 0;
   padding: 0;
-  padding-bottom: 30px;
+  padding-bottom: 29px;
 
   font-family: $fontbold;
   font-size: 18px;
@@ -242,8 +242,8 @@
 
 @media (min-width: $tablet-width) {
   .video-presentation__video-toggle::after {
-    top: 40px;
-    left: 154px;
+    top: 41px;
+    left: 152px;
   }
 }
 

@@ -52,6 +52,13 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .feedback-feeling::after {
+    content: "";
+    height: 94%;
+  }
+}
+
 /*Стили для лейблов*/
 
 .feedback-feeling__label {

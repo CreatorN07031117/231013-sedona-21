@@ -23,6 +23,12 @@ body {
   }
 }
 
+@media (min-width: $desktop-width) {
+  .visually-mobile-and-tablet {
+    display: none;
+  }
+}
+
 .visually-tablet {
   display: none;
 }
